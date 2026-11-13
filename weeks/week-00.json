@@ -1,0 +1,1639 @@
+{
+ "week": 0,
+ "startDate": "2026-11-16",
+ "level": "A1",
+ "theme": "Laute & Schrift",
+ "days": [
+  {
+   "day": 1,
+   "title": "Lange und kurze Vokale",
+   "goals": [
+    "Hear and say long vs. short vowels",
+    "Predict vowel length from spelling"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "Long or short?",
+     "explanation": "German vowels are either **long** or **short**, and length can change meaning: *Staat* (state) vs. *Stadt* (city). Spanish vowels are all medium length, so this takes practice.\n\n| Spelling | Length | Examples |\n|---|---|---|\n| vowel + one consonant | long | Tag, Brot, Name |\n| doubled vowel | long | Tee |\n| vowel + h (h is silent) | long | zehn, wohne, Ihnen |\n| ie | long 'ee' | Bier, vier |\n| vowel + double consonant | short | Mann, Wasser, null, bitte |\n| vowel + 2 or more consonants | usually short | acht, elf, fünf |",
+     "examples": [
+      "**Tag** (long a, 'tahk') vs. **Mann** (short a)",
+      "**Brot** (long o) vs. **noch** (short o)",
+      "**Bier** (long 'ee') vs. **bitte** (short i)"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Wörter (Review, already in Anki)",
+     "words": [
+      {
+       "de": "der Tag",
+       "en": "the day",
+       "example": "Der Tag ist lang.",
+       "plural": "die Tage"
+      },
+      {
+       "de": "der Mann",
+       "en": "the man",
+       "example": "Der Mann heißt Paul.",
+       "plural": "die Männer"
+      },
+      {
+       "de": "der Name",
+       "en": "the name",
+       "example": "Mein Name ist Jose.",
+       "plural": "die Namen"
+      },
+      {
+       "de": "das Brot",
+       "en": "the bread",
+       "example": "Das Brot ist frisch.",
+       "plural": "die Brote"
+      },
+      {
+       "de": "das Wasser",
+       "en": "the water",
+       "example": "Das Wasser ist kalt."
+      },
+      {
+       "de": "das Bier",
+       "en": "the beer",
+       "example": "Ein Bier, bitte.",
+       "plural": "die Biere"
+      },
+      {
+       "de": "bitte",
+       "en": "please / you're welcome",
+       "example": "Ein Wasser, bitte."
+      },
+      {
+       "de": "zehn",
+       "en": "ten",
+       "example": "Zehn Euro, bitte."
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Im Café",
+     "text": "– Guten Tag!\n– Guten Tag. Ein Wasser und ein Brot, bitte.\n– Gern. Und Sie?\n– Ein Bier, bitte.\n– Das macht zehn Euro.\n– Danke!",
+     "translation": "– Hello!\n– Hello. A water and a bread, please.\n– Sure. And you?\n– A beer, please.\n– That's ten euros.\n– Thanks!"
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w00d1-1",
+       "kind": "multiple_choice",
+       "topic": "Vokallänge",
+       "prompt": "In **Tag**, the a is…",
+       "options": [
+        "long",
+        "short"
+       ],
+       "answer": 0,
+       "explanation": "One consonant after the vowel → long: 'tahk'.",
+       "words": [
+        "der Tag"
+       ]
+      },
+      {
+       "id": "w00d1-2",
+       "kind": "multiple_choice",
+       "topic": "Vokallänge",
+       "prompt": "In **Mann**, the a is…",
+       "options": [
+        "long",
+        "short"
+       ],
+       "answer": 1,
+       "explanation": "Double consonant → short.",
+       "words": [
+        "der Mann"
+       ]
+      },
+      {
+       "id": "w00d1-3",
+       "kind": "multiple_choice",
+       "topic": "Vokallänge",
+       "prompt": "Which word has a **long** vowel?",
+       "options": [
+        "bitte",
+        "null",
+        "zehn",
+        "Wasser"
+       ],
+       "answer": 2,
+       "explanation": "Vowel + h → long, and the h is silent: 'tsayn'.",
+       "words": [
+        "zehn"
+       ]
+      },
+      {
+       "id": "w00d1-4",
+       "kind": "multiple_choice",
+       "topic": "Vokallänge",
+       "prompt": "Which word has a **short** vowel?",
+       "options": [
+        "Brot",
+        "Bier",
+        "Name",
+        "Wasser"
+       ],
+       "answer": 3,
+       "explanation": "ss after the a → short: 'VAS-sa'.",
+       "words": [
+        "das Wasser"
+       ]
+      },
+      {
+       "id": "w00d1-5",
+       "kind": "match",
+       "topic": "Vokallänge",
+       "prompt": "Match each word to its vowel.",
+       "pairs": [
+        [
+         "Tag",
+         "long a"
+        ],
+        [
+         "Mann",
+         "short a"
+        ],
+        [
+         "Bier",
+         "long ee"
+        ],
+        [
+         "bitte",
+         "short i"
+        ]
+       ]
+      },
+      {
+       "id": "w00d1-6",
+       "kind": "fill_blank",
+       "topic": "Vokallänge",
+       "prompt": "Das ___ ist kalt. (water)",
+       "answers": [
+        [
+         "Wasser"
+        ]
+       ],
+       "explanation": "Short a → double s. Nouns are capitalized.",
+       "strictCase": true,
+       "words": [
+        "das Wasser"
+       ]
+      },
+      {
+       "id": "w00d1-7",
+       "kind": "fill_blank",
+       "topic": "Vokallänge",
+       "prompt": "Mein ___ ist Jose. (name)",
+       "answers": [
+        [
+         "Name"
+        ]
+       ],
+       "explanation": "Long a → single m.",
+       "strictCase": true,
+       "words": [
+        "der Name"
+       ]
+      },
+      {
+       "id": "w00d1-8",
+       "kind": "translate",
+       "topic": "Café",
+       "direction": "en-de",
+       "prompt": "A beer, please.",
+       "acceptable": [
+        "ein bier bitte",
+        "ein bier, bitte"
+       ],
+       "modelAnswer": "Ein Bier, bitte.",
+       "words": [
+        "das Bier"
+       ]
+      },
+      {
+       "id": "w00d1-9",
+       "kind": "order",
+       "topic": "Begrüßung",
+       "prompt": "Build: Hello, how are you? (Sie)",
+       "answer": "Guten Tag, wie geht es Ihnen?",
+       "words": [
+        "Guten",
+        "Tag,",
+        "wie",
+        "geht",
+        "es",
+        "Ihnen?"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "speaking",
+     "prompt": "Read aloud slowly, then at normal speed:\n\n**Tag – Mann – Name – Wasser – Brot – noch – Bier – bitte – zehn – null**\n\nRecord yourself and compare with the Anki audio.",
+     "modelAnswer": "Long: **Tag** (tahk), **Name** (NAH-me), **Brot**, **Bier** (beer), **zehn** (tsayn).\nShort: **Mann**, **Wasser** (VAS-sa), **noch**, **bitte**, **null**."
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "title": "Umlaute: ä, ö, ü",
+   "goals": [
+    "Say ä, ö, ü",
+    "Spot umlaut plurals"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "Umlauts are their own vowels",
+     "explanation": "Umlauts change the word: *schon* (already) vs. *schön* (beautiful).\n\n| Letter | How to say it | Examples |\n|---|---|---|\n| ä | like Spanish **e** | später, Männer |\n| ö | say **e**, round your lips | zwölf, schön |\n| ü | say **i**, round your lips | fünf, Tschüss, Bücher |\n\nMany plurals add an umlaut: Mann → Männer, Buch → Bücher. If you can't type them, use ae / oe / ue: the app accepts these but flags them.",
+     "examples": [
+      "**schon** vs. **schön**",
+      "**Mann** → **Männer**",
+      "**Buch** → **Bücher**"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Wörter (Review, already in Anki)",
+     "words": [
+      {
+       "de": "Tschüss",
+       "en": "bye (casual)",
+       "example": "Tschüss, bis später!"
+      },
+      {
+       "de": "Bis später",
+       "en": "see you later",
+       "example": "Ich gehe jetzt. Bis später!"
+      },
+      {
+       "de": "fünf",
+       "en": "five",
+       "example": "Fünf Minuten, bitte."
+      },
+      {
+       "de": "zwölf",
+       "en": "twelve",
+       "example": "Ein Jahr hat zwölf Monate."
+      },
+      {
+       "de": "das Buch",
+       "en": "the book",
+       "example": "Das Buch ist gut.",
+       "plural": "die Bücher"
+      },
+      {
+       "de": "das Mädchen",
+       "en": "the girl",
+       "example": "Das Mädchen heißt Lena.",
+       "plural": "die Mädchen"
+      },
+      {
+       "de": "die Stadt",
+       "en": "the city",
+       "example": "Die Stadt ist schön.",
+       "plural": "die Städte"
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Lena",
+     "text": "Das Mädchen heißt Lena. Lena ist zwölf. Sie hat fünf Bücher. Die Bücher sind schön.\n– Tschüss, Lena! Bis später!",
+     "translation": "The girl's name is Lena. Lena is twelve. She has five books. The books are beautiful.\n– Bye, Lena! See you later!"
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w00d2-1",
+       "kind": "multiple_choice",
+       "topic": "Umlaute",
+       "prompt": "The ü in **fünf** sounds like…",
+       "options": [
+        "i with rounded lips",
+        "Spanish u",
+        "Spanish e"
+       ],
+       "answer": 0,
+       "explanation": "Say 'i', then round your lips without moving your tongue.",
+       "words": [
+        "fünf"
+       ]
+      },
+      {
+       "id": "w00d2-2",
+       "kind": "multiple_choice",
+       "topic": "Umlaute",
+       "prompt": "The ö in **zwölf** sounds like…",
+       "options": [
+        "Spanish o",
+        "e with rounded lips",
+        "Spanish u"
+       ],
+       "answer": 1,
+       "explanation": "Say 'e', then round your lips.",
+       "words": [
+        "zwölf"
+       ]
+      },
+      {
+       "id": "w00d2-3",
+       "kind": "multiple_choice",
+       "topic": "Umlaute",
+       "prompt": "The ä in **später** is closest to Spanish…",
+       "options": [
+        "a",
+        "e",
+        "i"
+       ],
+       "answer": 1,
+       "explanation": "ä ≈ Spanish e (here long).",
+       "words": [
+        "Bis später"
+       ]
+      },
+      {
+       "id": "w00d2-4",
+       "kind": "fill_blank",
+       "topic": "Umlaute",
+       "prompt": "Sie hat ___ Bücher. (5)",
+       "answers": [
+        [
+         "fünf"
+        ]
+       ],
+       "explanation": "",
+       "words": [
+        "fünf"
+       ]
+      },
+      {
+       "id": "w00d2-5",
+       "kind": "fill_blank",
+       "topic": "Umlaute",
+       "prompt": "Ein Jahr hat ___ Monate. (12)",
+       "answers": [
+        [
+         "zwölf"
+        ]
+       ],
+       "explanation": "",
+       "words": [
+        "zwölf"
+       ]
+      },
+      {
+       "id": "w00d2-6",
+       "kind": "multiple_choice",
+       "topic": "Plural",
+       "prompt": "Plural of **das Buch**?",
+       "options": [
+        "die Buchs",
+        "die Bücher",
+        "die Buche"
+       ],
+       "answer": 1,
+       "explanation": "-er plural + umlaut: Buch → Bücher.",
+       "words": [
+        "das Buch"
+       ]
+      },
+      {
+       "id": "w00d2-7",
+       "kind": "multiple_choice",
+       "topic": "Plural",
+       "prompt": "Plural of **der Mann**?",
+       "options": [
+        "die Manne",
+        "die Männer",
+        "die Manns"
+       ],
+       "answer": 1,
+       "explanation": "-er plural + umlaut: Mann → Männer.",
+       "words": [
+        "der Mann"
+       ]
+      },
+      {
+       "id": "w00d2-8",
+       "kind": "match",
+       "topic": "Begrüßung",
+       "prompt": "Match.",
+       "pairs": [
+        [
+         "Tschüss",
+         "bye (casual)"
+        ],
+        [
+         "Bis später",
+         "see you later"
+        ],
+        [
+         "fünf",
+         "five"
+        ],
+        [
+         "zwölf",
+         "twelve"
+        ]
+       ]
+      },
+      {
+       "id": "w00d2-9",
+       "kind": "translate",
+       "topic": "Begrüßung",
+       "direction": "en-de",
+       "prompt": "Bye, see you later!",
+       "acceptable": [
+        "tschüss bis später",
+        "tschüss, bis später",
+        "tschüs bis später",
+        "tschüs, bis später"
+       ],
+       "modelAnswer": "Tschüss, bis später!",
+       "words": [
+        "Tschüss",
+        "Bis später"
+       ]
+      },
+      {
+       "id": "w00d2-10",
+       "kind": "order",
+       "topic": "Umlaute",
+       "prompt": "Build: The girl is twelve.",
+       "answer": "Das Mädchen ist zwölf."
+      }
+     ]
+    },
+    {
+     "type": "speaking",
+     "prompt": "Read aloud:\n\n**schon – schön, Buch – Bücher, Mann – Männer, fünf, zwölf, Tschüss, später**",
+     "modelAnswer": "**schön** and **zwölf**: round your lips on an 'e'. **Bücher**, **fünf**, **Tschüss**: round your lips on an 'i'. **Männer**, **später**: Spanish e."
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "title": "ei, ie, eu, au",
+   "goals": [
+    "Tell ei from ie",
+    "Say eu/äu and au"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "Vowel pairs",
+     "explanation": "| Spelling | Sound | Examples |\n|---|---|---|\n| ei / ai | 'eye' | nein, drei, Zeit, heiße |\n| ie | long 'ee' | vier, Bier, sieben, Lied |\n| eu / äu | 'oy' | neun, Freund, Deutsch, Häuser |\n| au | 'ow' | Haus, Frau, aus |\n\nTrick for **ei** vs. **ie**: say the English name of the *second* letter. ei → 'eye', ie → 'ee'.",
+     "examples": [
+      "**vier** ('feer') vs. **drei** ('dry')",
+      "**Freund** ('froynt')",
+      "**Haus** ('house') → **Häuser** ('HOY-za')"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Wörter (Review, already in Anki)",
+     "words": [
+      {
+       "de": "nein",
+       "en": "no",
+       "example": "Nein, danke."
+      },
+      {
+       "de": "drei",
+       "en": "three",
+       "example": "Ich habe drei Bücher."
+      },
+      {
+       "de": "vier",
+       "en": "four",
+       "example": "Wir sind vier."
+      },
+      {
+       "de": "neun",
+       "en": "nine",
+       "example": "Es ist neun Uhr."
+      },
+      {
+       "de": "die Zeit",
+       "en": "the time",
+       "example": "Ich habe keine Zeit.",
+       "plural": "die Zeiten"
+      },
+      {
+       "de": "der Freund",
+       "en": "the friend (male)",
+       "example": "Mein Freund wohnt in Berlin.",
+       "plural": "die Freunde"
+      },
+      {
+       "de": "die Frau",
+       "en": "the woman",
+       "example": "Die Frau spricht Deutsch.",
+       "plural": "die Frauen"
+      },
+      {
+       "de": "das Haus",
+       "en": "the house",
+       "example": "Das Haus ist groß.",
+       "plural": "die Häuser"
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Wie heißt du?",
+     "text": "– Wie heißt du?\n– Ich heiße Paul. Und du?\n– Ich heiße Jose. Ich komme aus Mexiko.\n– Freut mich! Mein Freund wohnt in Mexiko.",
+     "translation": "– What's your name?\n– My name is Paul. And you?\n– My name is Jose. I'm from Mexico.\n– Nice to meet you! My friend lives in Mexico."
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w00d3-1",
+       "kind": "multiple_choice",
+       "topic": "Diphthonge",
+       "prompt": "**ei** in **nein** sounds like…",
+       "options": [
+        "ee",
+        "eye",
+        "ay"
+       ],
+       "answer": 1,
+       "explanation": "ei → 'eye': nein = 'nine'.",
+       "words": [
+        "nein"
+       ]
+      },
+      {
+       "id": "w00d3-2",
+       "kind": "multiple_choice",
+       "topic": "Diphthonge",
+       "prompt": "**ie** in **vier** sounds like…",
+       "options": [
+        "ee",
+        "eye",
+        "ay"
+       ],
+       "answer": 0,
+       "explanation": "ie → long 'ee': vier = 'feer'.",
+       "words": [
+        "vier"
+       ]
+      },
+      {
+       "id": "w00d3-3",
+       "kind": "multiple_choice",
+       "topic": "Diphthonge",
+       "prompt": "**eu** in **neun** sounds like…",
+       "options": [
+        "oy",
+        "ow",
+        "yoo"
+       ],
+       "answer": 0,
+       "explanation": "eu → 'oy': neun = 'noyn'.",
+       "words": [
+        "neun"
+       ]
+      },
+      {
+       "id": "w00d3-4",
+       "kind": "multiple_choice",
+       "topic": "Diphthonge",
+       "prompt": "Which word has the 'oy' sound?",
+       "options": [
+        "Haus",
+        "Häuser",
+        "Frau",
+        "aus"
+       ],
+       "answer": 1,
+       "explanation": "äu sounds like eu: 'HOY-za'. The others have au = 'ow'.",
+       "words": [
+        "das Haus"
+       ]
+      },
+      {
+       "id": "w00d3-5",
+       "kind": "fill_blank",
+       "topic": "Zahlen",
+       "prompt": "eins, zwei, ___, vier (3)",
+       "answers": [
+        [
+         "drei"
+        ]
+       ],
+       "explanation": "",
+       "words": [
+        "drei"
+       ]
+      },
+      {
+       "id": "w00d3-6",
+       "kind": "fill_blank",
+       "topic": "Zahlen",
+       "prompt": "Es ist ___ Uhr. (9)",
+       "answers": [
+        [
+         "neun"
+        ]
+       ],
+       "explanation": "",
+       "words": [
+        "neun"
+       ]
+      },
+      {
+       "id": "w00d3-7",
+       "kind": "fill_blank",
+       "topic": "Diphthonge",
+       "prompt": "Ich habe keine ___. (time)",
+       "answers": [
+        [
+         "Zeit"
+        ]
+       ],
+       "explanation": "z = ts, ei = 'eye': 'tsait'.",
+       "strictCase": true,
+       "words": [
+        "die Zeit"
+       ]
+      },
+      {
+       "id": "w00d3-8",
+       "kind": "match",
+       "topic": "Diphthonge",
+       "prompt": "Match each word to how it sounds.",
+       "pairs": [
+        [
+         "drei",
+         "dry"
+        ],
+        [
+         "vier",
+         "feer"
+        ],
+        [
+         "neun",
+         "noyn"
+        ],
+        [
+         "Haus",
+         "house"
+        ]
+       ]
+      },
+      {
+       "id": "w00d3-9",
+       "kind": "translate",
+       "topic": "Begrüßung",
+       "direction": "en-de",
+       "prompt": "Nice to meet you.",
+       "acceptable": [
+        "freut mich",
+        "freut mich sehr",
+        "sehr erfreut"
+       ],
+       "modelAnswer": "Freut mich.",
+       "words": [
+        "Freut mich."
+       ]
+      },
+      {
+       "id": "w00d3-10",
+       "kind": "order",
+       "topic": "Diphthonge",
+       "prompt": "Build: My friend lives in Berlin.",
+       "answer": "Mein Freund wohnt in Berlin."
+      }
+     ]
+    },
+    {
+     "type": "speaking",
+     "prompt": "Count aloud: **eins zwei drei vier fünf sechs sieben acht neun zehn**.\n\nThen say: *Wie heißt du? – Ich heiße … Freut mich!*",
+     "modelAnswer": "eins ('ains') – zwei ('tsvai') – drei ('dry') – vier ('feer') – fünf – sechs ('zeks') – sieben ('ZEE-ben') – acht – neun ('noyn') – zehn ('tsayn')."
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "title": "Zwei ch-Laute",
+   "goals": [
+    "Choose the right ch sound",
+    "Read -ig and chs"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "Two ways to say ch",
+     "explanation": "| After | Sound | Examples |\n|---|---|---|\n| a, o, u, au | like Spanish **j** (*jamón*) | Nacht, acht, Buch, noch |\n| everything else | like Japanese **ひ** (hi) | ich, nicht, Bücher, Mädchen |\n\nNever say ch as 'k' or 'sh'. Two extras: final **-ig** sounds like 'ich' (zwanzig = 'TSVAN-tsich'); **chs** = 'ks' (sechs = 'zeks').",
+     "examples": [
+      "**Buch** (j) → **Bücher** (ひ)",
+      "**Nacht** (j) → **Nächte** (ひ)",
+      "**acht** (j) vs. **nicht** (ひ)"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Wörter (Review, already in Anki)",
+     "words": [
+      {
+       "de": "acht",
+       "en": "eight",
+       "example": "Ich arbeite acht Stunden."
+      },
+      {
+       "de": "Gute Nacht",
+       "en": "good night",
+       "example": "Gute Nacht, bis morgen!"
+      },
+      {
+       "de": "Ich verstehe nicht.",
+       "en": "I don't understand.",
+       "example": "Entschuldigung, ich verstehe nicht."
+      },
+      {
+       "de": "Noch einmal, bitte.",
+       "en": "Again, please.",
+       "example": "Wie bitte? Noch einmal, bitte."
+      },
+      {
+       "de": "zwanzig",
+       "en": "twenty",
+       "example": "Zwanzig Euro, bitte."
+      },
+      {
+       "de": "sechs",
+       "en": "six",
+       "example": "Es ist sechs Uhr."
+      },
+      {
+       "de": "die Sprache",
+       "en": "the language",
+       "example": "Deutsch ist eine schöne Sprache.",
+       "plural": "die Sprachen"
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Gute Nacht",
+     "text": "– Gute Nacht!\n– Gute Nacht! Bis morgen!\nIch lese ein Buch. Das Buch ist gut, aber ich verstehe nicht alles. Ich lerne die Sprache noch.",
+     "translation": "– Good night!\n– Good night! See you tomorrow!\nI'm reading a book. The book is good, but I don't understand everything. I'm still learning the language."
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w00d4-1",
+       "kind": "multiple_choice",
+       "topic": "ch-Laut",
+       "prompt": "ch in **Nacht**:",
+       "options": [
+        "like Spanish j",
+        "like Japanese ひ",
+        "like k"
+       ],
+       "answer": 0,
+       "explanation": "After a → back sound (Spanish j).",
+       "words": [
+        "Gute Nacht"
+       ]
+      },
+      {
+       "id": "w00d4-2",
+       "kind": "multiple_choice",
+       "topic": "ch-Laut",
+       "prompt": "ch in **ich**:",
+       "options": [
+        "like Spanish j",
+        "like Japanese ひ",
+        "like sh"
+       ],
+       "answer": 1,
+       "explanation": "After i → front sound (ひ)."
+      },
+      {
+       "id": "w00d4-3",
+       "kind": "multiple_choice",
+       "topic": "ch-Laut",
+       "prompt": "ch in **Bücher**:",
+       "options": [
+        "like Spanish j",
+        "like Japanese ひ",
+        "like k"
+       ],
+       "answer": 1,
+       "explanation": "After ü → ひ, even though Buch has the j sound."
+      },
+      {
+       "id": "w00d4-4",
+       "kind": "multiple_choice",
+       "topic": "ch-Laut",
+       "prompt": "ch in **Buch**:",
+       "options": [
+        "like Spanish j",
+        "like Japanese ひ",
+        "like sh"
+       ],
+       "answer": 0,
+       "explanation": "After u → Spanish j."
+      },
+      {
+       "id": "w00d4-5",
+       "kind": "multiple_choice",
+       "topic": "ch-Laut",
+       "prompt": "How do you say **sechs**?",
+       "options": [
+        "zeks",
+        "zesh",
+        "sech"
+       ],
+       "answer": 0,
+       "explanation": "s before a vowel = z; chs = ks.",
+       "words": [
+        "sechs"
+       ]
+      },
+      {
+       "id": "w00d4-6",
+       "kind": "multiple_choice",
+       "topic": "ch-Laut",
+       "prompt": "Final **-ig** in **zwanzig** sounds like…",
+       "options": [
+        "ig (hard g)",
+        "ich (ひ)",
+        "ish"
+       ],
+       "answer": 1,
+       "explanation": "Standard: 'TSVAN-tsich'. In southern Germany and Austria you'll also hear '-ik'.",
+       "words": [
+        "zwanzig"
+       ]
+      },
+      {
+       "id": "w00d4-7",
+       "kind": "fill_blank",
+       "topic": "Zahlen",
+       "prompt": "Ich arbeite ___ Stunden. (8)",
+       "answers": [
+        [
+         "acht"
+        ]
+       ],
+       "explanation": "",
+       "words": [
+        "acht"
+       ]
+      },
+      {
+       "id": "w00d4-8",
+       "kind": "fill_blank",
+       "topic": "ch-Laut",
+       "prompt": "Gute ___! (night)",
+       "answers": [
+        [
+         "Nacht"
+        ]
+       ],
+       "explanation": "",
+       "strictCase": true,
+       "words": [
+        "Gute Nacht"
+       ]
+      },
+      {
+       "id": "w00d4-9",
+       "kind": "translate",
+       "topic": "Klassenzimmer",
+       "direction": "en-de",
+       "prompt": "I don't understand.",
+       "acceptable": [
+        "ich verstehe nicht",
+        "ich verstehe das nicht"
+       ],
+       "modelAnswer": "Ich verstehe nicht.",
+       "words": [
+        "Ich verstehe nicht."
+       ]
+      },
+      {
+       "id": "w00d4-10",
+       "kind": "translate",
+       "topic": "Klassenzimmer",
+       "direction": "en-de",
+       "prompt": "Again, please.",
+       "acceptable": [
+        "noch einmal bitte",
+        "noch einmal, bitte",
+        "noch mal bitte",
+        "noch mal, bitte",
+        "nochmal bitte",
+        "nochmal, bitte"
+       ],
+       "modelAnswer": "Noch einmal, bitte.",
+       "words": [
+        "Noch einmal, bitte."
+       ]
+      }
+     ]
+    },
+    {
+     "type": "speaking",
+     "prompt": "Read the pairs aloud:\n\n**Buch / Bücher – Nacht / Nächte – acht / nicht – noch / ich**\n\nThen: *Entschuldigung, ich verstehe nicht. Noch einmal, bitte.*",
+     "modelAnswer": "First word of each pair: Spanish j (back of the throat). Second: Japanese ひ (air over the front of the tongue)."
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "title": "s, z, sch, sp, st, w, v, j",
+   "goals": [
+    "Say s/z/sch correctly",
+    "Remember w = v and v = f"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "Consonants that trick Spanish and English speakers",
+     "explanation": "| Spelling | Sound | Examples |\n|---|---|---|\n| s + vowel | English z | Sie, sieben, sechs |\n| ss, ß | s | Wasser, heiße, Straße |\n| z | ts (Japanese つ) | zehn, zwei, Zeit |\n| sch | sh | Schule |\n| sp-, st- at the start of a word or stem | shp, sht | Sprache, später, Stadt, verstehe |\n| tsch | ch (church) | Tschüss, Deutsch |\n| w | v | Wasser, wohne, wie |\n| v | f | vier, vielen, verstehe |\n| j | y | ja |\n\nß comes after long vowels and ei/eu (Straße, heiße); ss after short ones (Wasser). Switzerland writes ss everywhere.",
+     "examples": [
+      "**Sie** ('zee') – **sechs** ('zeks') – **sieben** ('ZEE-ben')",
+      "**Stadt** ('shtat'), but **ist** ('ist')",
+      "**Wie viel?** = 'vee feel'"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Wörter (Review, already in Anki)",
+     "words": [
+      {
+       "de": "sieben",
+       "en": "seven",
+       "example": "Die Woche hat sieben Tage."
+      },
+      {
+       "de": "zwei",
+       "en": "two",
+       "example": "Zwei Bier, bitte."
+      },
+      {
+       "de": "die Straße",
+       "en": "the street",
+       "example": "Die Straße ist lang.",
+       "plural": "die Straßen"
+      },
+      {
+       "de": "die Schule",
+       "en": "the school",
+       "example": "Die Schule ist hier.",
+       "plural": "die Schulen"
+      },
+      {
+       "de": "Vielen Dank",
+       "en": "thank you very much",
+       "example": "Vielen Dank für die Hilfe!"
+      },
+      {
+       "de": "ja",
+       "en": "yes",
+       "example": "Ja, ich spreche Deutsch."
+      },
+      {
+       "de": "Ich heiße …",
+       "en": "My name is …",
+       "example": "Ich heiße Jose."
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Wo ist die Schule?",
+     "text": "– Entschuldigung, wo ist die Schule?\n– Die Schule? Hier, in der Straße, Nummer sieben.\n– Vielen Dank!\n– Bitte!",
+     "translation": "– Excuse me, where is the school?\n– The school? Here, on this street, number seven.\n– Thank you very much!\n– You're welcome!"
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w00d5-1",
+       "kind": "multiple_choice",
+       "topic": "s/z/sch",
+       "prompt": "**z** in **zehn** sounds like…",
+       "options": [
+        "ts",
+        "z (English 'zoo')",
+        "s"
+       ],
+       "answer": 0,
+       "explanation": "z = ts, like Japanese つ: 'tsayn'.",
+       "words": [
+        "zehn"
+       ]
+      },
+      {
+       "id": "w00d5-2",
+       "kind": "multiple_choice",
+       "topic": "s/z/sch",
+       "prompt": "**s** in **Sie** sounds like…",
+       "options": [
+        "English s",
+        "English z",
+        "sh"
+       ],
+       "answer": 1,
+       "explanation": "s before a vowel = English z: 'zee'."
+      },
+      {
+       "id": "w00d5-3",
+       "kind": "multiple_choice",
+       "topic": "s/z/sch",
+       "prompt": "**st** in **Stadt** sounds like…",
+       "options": [
+        "st",
+        "sht",
+        "s"
+       ],
+       "answer": 1,
+       "explanation": "st at the start of a word = 'sht': 'shtat'.",
+       "words": [
+        "die Stadt"
+       ]
+      },
+      {
+       "id": "w00d5-4",
+       "kind": "multiple_choice",
+       "topic": "w/v/j",
+       "prompt": "**w** in **wohne** sounds like…",
+       "options": [
+        "English w",
+        "English v",
+        "English f"
+       ],
+       "answer": 1,
+       "explanation": "w = English v: 'VOH-ne'."
+      },
+      {
+       "id": "w00d5-5",
+       "kind": "multiple_choice",
+       "topic": "w/v/j",
+       "prompt": "**v** in **vier** sounds like…",
+       "options": [
+        "English v",
+        "English f",
+        "English w"
+       ],
+       "answer": 1,
+       "explanation": "v = English f (in most native words): 'feer'.",
+       "words": [
+        "vier"
+       ]
+      },
+      {
+       "id": "w00d5-6",
+       "kind": "fill_blank",
+       "topic": "s/z/sch",
+       "prompt": "Die ___ ist lang. (street)",
+       "answers": [
+        [
+         "Straße"
+        ]
+       ],
+       "explanation": "Long a + ß. ('Strasse' is the Swiss spelling.)",
+       "strictCase": true,
+       "words": [
+        "die Straße"
+       ]
+      },
+      {
+       "id": "w00d5-7",
+       "kind": "fill_blank",
+       "topic": "s/z/sch",
+       "prompt": "Ich ___ Jose. (my name is)",
+       "answers": [
+        [
+         "heiße"
+        ]
+       ],
+       "explanation": "ß after ei.",
+       "words": [
+        "Ich heiße …"
+       ]
+      },
+      {
+       "id": "w00d5-8",
+       "kind": "match",
+       "topic": "s/z/sch",
+       "prompt": "Match each word to how it sounds.",
+       "pairs": [
+        [
+         "Sie",
+         "zee"
+        ],
+        [
+         "zehn",
+         "tsayn"
+        ],
+        [
+         "Schule",
+         "SHOO-le"
+        ],
+        [
+         "vier",
+         "feer"
+        ]
+       ]
+      },
+      {
+       "id": "w00d5-9",
+       "kind": "translate",
+       "topic": "Höflichkeit",
+       "direction": "en-de",
+       "prompt": "Thank you very much!",
+       "acceptable": [
+        "vielen dank",
+        "danke schön",
+        "danke sehr",
+        "vielen herzlichen dank"
+       ],
+       "modelAnswer": "Vielen Dank!",
+       "words": [
+        "Vielen Dank"
+       ]
+      },
+      {
+       "id": "w00d5-10",
+       "kind": "order",
+       "topic": "Wortstellung",
+       "prompt": "Build: Excuse me, where is the school?",
+       "answer": "Entschuldigung, wo ist die Schule?",
+       "words": [
+        "Entschuldigung,",
+        "wo",
+        "ist",
+        "die",
+        "Schule?"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "speaking",
+     "prompt": "Read aloud:\n\n**sechs – sieben – zehn – zwei – Straße – Schule – Sprache – später – Stadt – Wasser – vier – Vielen Dank – ja**",
+     "modelAnswer": "'zeks – ZEE-ben – tsayn – tsvai – SHTRAH-se – SHOO-le – SHPRAH-che – SHPAY-ta – shtat – VAS-sa – feer – FEE-len dank – yah'"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "title": "Endungen: -d, -g, -er, stummes h",
+   "goals": [
+    "Harden final b/d/g",
+    "Say final -er as 'a'"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "What happens at the end of a word",
+     "explanation": "| Rule | Examples |\n|---|---|\n| final b / d / g → p / t / k | Tag ('tahk'), Abend ('AH-bent'), Kind ('kint') |\n| add an ending → voiced again | Tage, Kinder, Lieder, Freunde |\n| final -er → a short 'a' | Wasser ('VAS-sa'), Männer, später |\n| vowel + h → long, h silent | zehn, wohne, Ihnen |\n\n**r** before a vowel is made in the throat (a soft gargle), never rolled like Spanish rr: Brot, drei, Frau.",
+     "examples": [
+      "**Kind** ('kint') → **Kinder** ('KIN-da')",
+      "**Tag** ('tahk') → **Tage** ('TAH-ge')",
+      "**Guten Abend** = 'GOO-ten AH-bent'"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Wörter (Review, already in Anki)",
+     "words": [
+      {
+       "de": "Guten Abend",
+       "en": "good evening",
+       "example": "Guten Abend, wie geht es Ihnen?"
+      },
+      {
+       "de": "das Kind",
+       "en": "the child",
+       "example": "Das Kind ist zehn.",
+       "plural": "die Kinder"
+      },
+      {
+       "de": "das Lied",
+       "en": "the song",
+       "example": "Das Lied ist schön.",
+       "plural": "die Lieder"
+      },
+      {
+       "de": "Langsamer, bitte.",
+       "en": "More slowly, please.",
+       "example": "Langsamer, bitte. Ich lerne Deutsch."
+      },
+      {
+       "de": "Wie geht es Ihnen?",
+       "en": "How are you? (Sie)",
+       "example": "Guten Tag, Herr Müller! Wie geht es Ihnen?"
+      },
+      {
+       "de": "Gut, danke.",
+       "en": "Fine, thanks.",
+       "example": "Gut, danke. Und dir?"
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Guten Abend, Frau Weber",
+     "text": "– Guten Abend, Frau Weber! Wie geht es Ihnen?\n– Gut, danke. Und Ihnen?\n– Gut! Mein Kind ist zehn. Es hört jeden Tag Musik.",
+     "translation": "– Good evening, Ms. Weber! How are you?\n– Fine, thanks. And you?\n– Good! My child is ten. He listens to music every day."
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w00d6-1",
+       "kind": "multiple_choice",
+       "topic": "Auslautverhärtung",
+       "prompt": "**d** in **Kind** sounds like…",
+       "options": [
+        "d",
+        "t"
+       ],
+       "answer": 1,
+       "explanation": "Final d → t: 'kint'.",
+       "words": [
+        "das Kind"
+       ]
+      },
+      {
+       "id": "w00d6-2",
+       "kind": "multiple_choice",
+       "topic": "Auslautverhärtung",
+       "prompt": "**d** in **Kinder** sounds like…",
+       "options": [
+        "d",
+        "t"
+       ],
+       "answer": 0,
+       "explanation": "With an ending, the d is voiced again: 'KIN-da'.",
+       "words": [
+        "das Kind"
+       ]
+      },
+      {
+       "id": "w00d6-3",
+       "kind": "multiple_choice",
+       "topic": "Auslautverhärtung",
+       "prompt": "**g** in **Tag** sounds like…",
+       "options": [
+        "g",
+        "k"
+       ],
+       "answer": 1,
+       "explanation": "Final g → k: 'tahk'."
+      },
+      {
+       "id": "w00d6-4",
+       "kind": "multiple_choice",
+       "topic": "-er",
+       "prompt": "Final **-er** in **Wasser** sounds like…",
+       "options": [
+        "'er' as in English 'her'",
+        "a short 'a'",
+        "a rolled rr"
+       ],
+       "answer": 1,
+       "explanation": "'VAS-sa'."
+      },
+      {
+       "id": "w00d6-5",
+       "kind": "multiple_choice",
+       "topic": "Vokallänge",
+       "prompt": "The **h** in **zehn**…",
+       "options": [
+        "is pronounced",
+        "is silent and makes the e long"
+       ],
+       "answer": 1,
+       "explanation": "'tsayn'."
+      },
+      {
+       "id": "w00d6-6",
+       "kind": "fill_blank",
+       "topic": "Begrüßung",
+       "prompt": "Guten ___, Herr Müller! (evening)",
+       "answers": [
+        [
+         "Abend"
+        ]
+       ],
+       "explanation": "Final d → t: 'AH-bent'.",
+       "strictCase": true,
+       "words": [
+        "Guten Abend"
+       ]
+      },
+      {
+       "id": "w00d6-7",
+       "kind": "fill_blank",
+       "topic": "Auslautverhärtung",
+       "prompt": "Das ___ ist zehn. (child)",
+       "answers": [
+        [
+         "Kind"
+        ]
+       ],
+       "explanation": "",
+       "strictCase": true,
+       "words": [
+        "das Kind"
+       ]
+      },
+      {
+       "id": "w00d6-8",
+       "kind": "translate",
+       "topic": "Klassenzimmer",
+       "direction": "en-de",
+       "prompt": "More slowly, please.",
+       "acceptable": [
+        "langsamer bitte",
+        "langsamer, bitte",
+        "bitte langsamer",
+        "etwas langsamer bitte",
+        "etwas langsamer, bitte"
+       ],
+       "modelAnswer": "Langsamer, bitte.",
+       "words": [
+        "Langsamer, bitte."
+       ]
+      },
+      {
+       "id": "w00d6-9",
+       "kind": "translate",
+       "topic": "Register",
+       "direction": "en-de",
+       "prompt": "How are you? (formal)",
+       "acceptable": [
+        "wie geht es ihnen"
+       ],
+       "modelAnswer": "Wie geht es Ihnen?",
+       "words": [
+        "Wie geht es Ihnen?"
+       ]
+      },
+      {
+       "id": "w00d6-10",
+       "kind": "order",
+       "topic": "Begrüßung",
+       "prompt": "Build: Fine, thanks. And you? (Sie)",
+       "answer": "Gut, danke. Und Ihnen?",
+       "words": [
+        "Gut,",
+        "danke.",
+        "Und",
+        "Ihnen?"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "speaking",
+     "prompt": "Read the pairs aloud:\n\n**Tag / Tage – Kind / Kinder – Lied / Lieder – Freund / Freunde**\n\nThen: **Wasser, langsamer, zehn, Ihnen**",
+     "modelAnswer": "'tahk / TAH-ge – kint / KIN-da – leet / LEE-da – froynt / FROYN-de' – 'VAS-sa, LANG-zah-ma, tsayn, EE-nen'"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "title": "Wortakzent + Wiederholung",
+   "goals": [
+    "Stress the right syllable",
+    "Introduce yourself in German"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "Which syllable is stressed?",
+     "explanation": "| Pattern | Examples |\n|---|---|\n| first syllable (default) | WAS-ser, SPRA-che, NA-me, KAF-fee |\n| after be- / ver- / ent- / ge- | ver-STE-he, Ent-SCHUL-di-gung |\n| last syllable (many loanwords) | Mu-SIK |\n\n*Auf Wiedersehen* stresses WIE: 'owf VEE-der-zay-en'.",
+     "examples": [
+      "ver**STE**he",
+      "Ent**SCHUL**digung",
+      "Mu**SIK**"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Wörter (Review, already in Anki)",
+     "words": [
+      {
+       "de": "Entschuldigung",
+       "en": "excuse me / sorry",
+       "example": "Entschuldigung, wo ist die Schule?"
+      },
+      {
+       "de": "die Musik",
+       "en": "the music",
+       "example": "Ich höre Musik."
+      },
+      {
+       "de": "der Kaffee",
+       "en": "the coffee",
+       "example": "Der Kaffee ist gut.",
+       "plural": "die Kaffees"
+      },
+      {
+       "de": "Auf Wiedersehen",
+       "en": "goodbye (formal)",
+       "example": "Auf Wiedersehen, Herr Müller!"
+      },
+      {
+       "de": "Sprechen Sie Englisch?",
+       "en": "Do you speak English? (Sie)",
+       "example": "Sprechen Sie Englisch? – Ja, ein bisschen."
+      },
+      {
+       "de": "Ich spreche ein bisschen Deutsch.",
+       "en": "I speak a little German.",
+       "example": "Ich spreche ein bisschen Deutsch."
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Ein Gespräch",
+     "text": "– Entschuldigung, sprechen Sie Englisch?\n– Ja, ein bisschen.\n– Danke! Ich spreche ein bisschen Deutsch. Ich heiße Jose und ich komme aus Mexiko.\n– Freut mich! Ich heiße Anna Weber.\n– Wie bitte? Langsamer, bitte.\n– Ich heiße Anna Weber.\n– Freut mich! Auf Wiedersehen, Frau Weber!\n– Auf Wiedersehen!",
+     "translation": "– Excuse me, do you speak English?\n– Yes, a little.\n– Thanks! I speak a little German. My name is Jose and I'm from Mexico.\n– Nice to meet you! My name is Anna Weber.\n– Pardon? More slowly, please.\n– My name is Anna Weber.\n– Nice to meet you! Goodbye, Ms. Weber!\n– Goodbye!"
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w00d7-1",
+       "kind": "multiple_choice",
+       "topic": "Wortakzent",
+       "prompt": "Stressed syllable in **Entschuldigung**?",
+       "options": [
+        "ENT",
+        "SCHUL",
+        "DI",
+        "GUNG"
+       ],
+       "answer": 1,
+       "explanation": "ent- is an unstressed prefix.",
+       "words": [
+        "Entschuldigung"
+       ]
+      },
+      {
+       "id": "w00d7-2",
+       "kind": "multiple_choice",
+       "topic": "Wortakzent",
+       "prompt": "Stress in **Musik**?",
+       "options": [
+        "MU-sik",
+        "mu-SIK"
+       ],
+       "answer": 1,
+       "explanation": "Loanword → stress at the end.",
+       "words": [
+        "die Musik"
+       ]
+      },
+      {
+       "id": "w00d7-3",
+       "kind": "multiple_choice",
+       "topic": "Wortakzent",
+       "prompt": "Stress in **verstehe**?",
+       "options": [
+        "VER-ste-he",
+        "ver-STE-he"
+       ],
+       "answer": 1,
+       "explanation": "ver- is never stressed."
+      },
+      {
+       "id": "w00d7-4",
+       "kind": "multiple_choice",
+       "topic": "Register",
+       "prompt": "Which goodbye is formal (Sie)?",
+       "options": [
+        "Tschüss",
+        "Bis später",
+        "Auf Wiedersehen",
+        "Hallo"
+       ],
+       "answer": 2,
+       "explanation": "Tschüss is casual; Auf Wiedersehen is safe with Sie.",
+       "words": [
+        "Auf Wiedersehen"
+       ]
+      },
+      {
+       "id": "w00d7-5",
+       "kind": "fill_blank",
+       "topic": "Register",
+       "prompt": "Wie ___ Sie? (What's your name? formal)",
+       "answers": [
+        [
+         "heißen"
+        ]
+       ],
+       "explanation": "Sie takes the -en form."
+      },
+      {
+       "id": "w00d7-6",
+       "kind": "fill_blank",
+       "topic": "Register",
+       "prompt": "Woher ___ du? (Where are you from?)",
+       "answers": [
+        [
+         "kommst"
+        ]
+       ],
+       "explanation": "du takes -st."
+      },
+      {
+       "id": "w00d7-7",
+       "kind": "match",
+       "topic": "Begrüßung",
+       "prompt": "Match.",
+       "pairs": [
+        [
+         "Guten Morgen",
+         "good morning"
+        ],
+        [
+         "Guten Abend",
+         "good evening"
+        ],
+        [
+         "Gute Nacht",
+         "good night"
+        ],
+        [
+         "Wie bitte?",
+         "Pardon?"
+        ]
+       ]
+      },
+      {
+       "id": "w00d7-8",
+       "kind": "translate",
+       "topic": "Register",
+       "direction": "en-de",
+       "prompt": "Do you speak English? (formal)",
+       "acceptable": [
+        "sprechen sie englisch"
+       ],
+       "modelAnswer": "Sprechen Sie Englisch?",
+       "words": [
+        "Sprechen Sie Englisch?"
+       ]
+      },
+      {
+       "id": "w00d7-9",
+       "kind": "translate",
+       "topic": "Vorstellung",
+       "direction": "en-de",
+       "prompt": "I speak a little German.",
+       "acceptable": [
+        "ich spreche ein bisschen deutsch",
+        "ich spreche ein wenig deutsch",
+        "ich spreche etwas deutsch"
+       ],
+       "modelAnswer": "Ich spreche ein bisschen Deutsch.",
+       "words": [
+        "Ich spreche ein bisschen Deutsch."
+       ]
+      },
+      {
+       "id": "w00d7-10",
+       "kind": "order",
+       "topic": "Vorstellung",
+       "prompt": "Build: I'm from Mexico.",
+       "answer": "Ich komme aus Mexiko."
+      }
+     ]
+    },
+    {
+     "type": "writing",
+     "prompt": "Write 4–5 lines introducing yourself, using only this week's phrases: a greeting, your name, where you're from, where you live, which languages you speak.",
+     "modelAnswer": "Guten Tag! Ich heiße Jose. Ich komme aus Mexiko. Ich wohne in Indiana. Ich spreche Spanisch, Englisch und ein bisschen Deutsch."
+    },
+    {
+     "type": "speaking",
+     "prompt": "**Partner check:** read your introduction to your speaking partner and ask them to correct your pronunciation.",
+     "modelAnswer": "Ask them to listen for: ch (Spanish j vs. ひ), ü / ö, z = ts, w = v, final -er = 'a', and stress on the right syllable."
+    }
+   ]
+  }
+ ]
+}

@@ -528,7 +528,7 @@ function renderGrammar(body,s){
   if(s.examples&&s.examples.length) body.appendChild(h("div",{class:"card german"},"<ul>"+s.examples.map(e=>"<li>"+inline(e)+"</li>").join("")+"</ul>"));
 }
 function renderVocab(body,s){
-  body.appendChild(h("h2",null,"Neue Wörter"));
+  body.appendChild(h("h2",null,esc(s.title||"Neue Wörter")));
   body.appendChild(h("p",{class:"muted small"},"Tap a card to flip it."));
   (s.words||[]).forEach(w=>{
     let back=false;
