@@ -2541,16 +2541,20 @@ function renderSettings(app){
   const ap=h("select"); [["1","On"],["0","Off"]].forEach(([v,l])=>{ const o=h("option",{value:v},l); if((cf.autoplay?"1":"0")===v) o.selected=true; ap.appendChild(o); });
   ap.addEventListener("change",()=>setCfg({autoplay:ap.value==="1"}));
   c0.appendChild(row("Play audio on answer",ap));
+  const vm=h("select"); [["thorsten","Thorsten (male)"],["kerstin","Kerstin (female)"],["device","iPhone voice"]].forEach(([v,l])=>{ const o=h("option",{value:v},l); if(voiceMode()===v) o.selected=true; vm.appendChild(o); });
+  c0.appendChild(row("Voice",vm));
   const vs=h("select");
-  const fillVoices=()=>{ vs.innerHTML=""; vs.appendChild(h("option",{value:""},"Automatic")); TTS.voices().forEach(v=>{ const o=h("option",{value:v.voiceURI},esc(v.name)+" ("+esc(v.lang)+")"); if(v.voiceURI===getCfg().voice) o.selected=true; vs.appendChild(o); }); };
+  const fillVoices=()=>{ vs.innerHTML=""; vs.appendChild(h("option",{value:""},"Automatic")); TTS.voices().forEach(v=>{ const o=h("option",{value:v.voiceURI},esc(v.name)+" ("+esc(v.lang)+")"); if(v.voiceURI===deviceVoiceURI()) o.selected=true; vs.appendChild(o); }); };
   fillVoices(); try{ speechSynthesis.addEventListener("voiceschanged",fillVoices); }catch(e){}
-  vs.addEventListener("change",()=>setCfg({voice:vs.value}));
-  c0.appendChild(row("German voice",vs));
+  vs.addEventListener("change",()=>setCfg({deviceVoice:vs.value}));
+  const dvRow=row("iPhone voice",vs); dvRow.style.display=voiceMode()==="device"?"":"none";
+  vm.addEventListener("change",()=>{ setCfg({voice:vm.value, deviceVoice:deviceVoiceURI()}); dvRow.style.display=vm.value==="device"?"":"none"; });
+  c0.appendChild(dvRow);
   const rs=h("select"); [0.7,0.8,0.9,1].forEach(v=>{ const o=h("option",{value:v},v===1?"Normal":Math.round(v*100)+"%"); if(v===cf.rate) o.selected=true; rs.appendChild(o); });
   rs.addEventListener("change",()=>setCfg({rate:+rs.value}));
   c0.appendChild(row("Speech speed",rs));
-  c0.appendChild(h("button",{class:"big",onclick:()=>TTS.say("Guten Tag! Ich heiße Jose und ich lerne Deutsch.")},"🔊 Test voice"));
-  c0.appendChild(h("p",{class:"muted small"},"For a better voice: iPhone Settings → Accessibility → Spoken Content → Voices → German, then download an Enhanced or Premium voice and pick it here."));
+  c0.appendChild(h("button",{class:"big",onclick:()=>TTS.say("Ich spreche ein bisschen Deutsch.")},"🔊 Test voice"));
+  c0.appendChild(h("p",{class:"muted small"},"Thorsten and Kerstin are recorded audio files (open-source Piper voices). If a text has no file yet, the iPhone voice reads it instead. iPhone web apps can only use iOS's basic built-in voices, not the Enhanced or Premium ones from Settings."));
   app.appendChild(c0);
   // anki export
   const ce=h("div",{class:"card"},"<h2 style='margin-top:0'>Export to Anki</h2><p class='muted small'>Cards only (Anki can't import review history). Same format as the weekly Anki files.</p>");
@@ -2821,7 +2825,7 @@ function studyDay(d){ const x=new Date(d===undefined?Date.now():d); x.setHours(x
 function dayKeyOf(d){ const x=studyDay(d); return x.getFullYear()+"-"+pad2(x.getMonth()+1)+"-"+pad2(x.getDate()); }
 function endOfStudyDay(){ const s=studyDay(); return new Date(s.getFullYear(),s.getMonth(),s.getDate()+1,DAY_START_HOUR); }
 
-const CFG_DEFAULT={ newPerDay:10, retention:0.9, autoplay:true, voice:"", rate:0.9 };
+const CFG_DEFAULT={ newPerDay:10, retention:0.9, autoplay:true, voice:"", rate:1 };
 function getCfg(){ return Object.assign({},CFG_DEFAULT,store.get("cfg",{})||{}); }
 function setCfg(patch){ store.set("cfg",Object.assign(getCfg(),patch)); SCHED=null; }
 
@@ -2896,18 +2900,36 @@ function fmtIvl(ms){
   return (Math.round(d/36.5)/10)+"y";
 }
 
-/* ---------- audio: the phone's own German voices ---------- */
+/* ---------- audio: recorded Piper voices (audio/<voice>/<key>.mp3), iPhone voice as fallback ---------- */
+const FILE_VOICES={thorsten:"Thorsten (male)",kerstin:"Kerstin (female)"};
+function ttsClean(text){ return String(text==null?"":text).replace(/…|\.\.\./g," ").replace(/\([^)]*\)/g," ").replace(/\s+/g," ").trim(); }
+function audioKey(t){ const b=new TextEncoder().encode(t); let h=0x811C9DC5; for(let i=0;i<b.length;i++){ h=Math.imul((h^b[i])>>>0,0x01000193)>>>0; } return ("00000000"+h.toString(16)).slice(-8)+"-"+b.length; }
+function voiceMode(){ const v=getCfg().voice; if(!v) return "thorsten"; if(FILE_VOICES[v]||v==="device") return v; return "device"; }
+function deviceVoiceURI(){ const c=getCfg(); if(c.deviceVoice) return c.deviceVoice; return (c.voice && !FILE_VOICES[c.voice] && c.voice!=="device") ? c.voice : ""; }
 const TTS={
+  cur:null,
   voices(){ try{ return speechSynthesis.getVoices().filter(v=>/^de([-_]|$)/i.test(v.lang)); }catch(e){ return []; } },
-  pick(){ const vs=this.voices(); const want=getCfg().voice; return vs.find(v=>v.voiceURI===want) || vs.find(v=>/premium|enhanced|erweitert/i.test(v.name)&&/DE/i.test(v.lang)) || vs.find(v=>/de[-_]DE/i.test(v.lang)) || vs[0] || null; },
-  say(text){
+  pick(){ const vs=this.voices(); const want=deviceVoiceURI(); return vs.find(v=>v.voiceURI===want) || vs.find(v=>/de[-_]DE/i.test(v.lang)) || vs[0] || null; },
+  stop(){ try{ if(this.cur){ this.cur.pause(); this.cur=null; } }catch(e){} try{ speechSynthesis.cancel(); }catch(e){} },
+  device(t){
     try{
-      if(!("speechSynthesis" in window) || !text) return;
-      const t=String(text).replace(/…|\.\.\./g," ").replace(/\([^)]*\)/g," ").replace(/\s+/g," ").trim(); if(!t) return;
-      speechSynthesis.cancel();
+      if(!("speechSynthesis" in window)) return;
       const u=new SpeechSynthesisUtterance(t); u.lang="de-DE"; const v=this.pick(); if(v) u.voice=v; u.rate=getCfg().rate||0.9;
       speechSynthesis.speak(u);
     }catch(e){}
+  },
+  say(text){
+    const t=ttsClean(text); if(!t) return;
+    this.stop();
+    const mode=voiceMode();
+    if(mode==="device"){ this.device(t); return; }
+    try{
+      const a=new Audio("audio/"+mode+"/"+audioKey(t)+".mp3"); this.cur=a;
+      try{ a.preservesPitch=true; a.playbackRate=getCfg().rate||1; }catch(e){}
+      let fell=false; const fb=()=>{ if(fell || this.cur!==a) return; fell=true; this.cur=null; this.device(t); };
+      a.addEventListener("error",fb);
+      const p=a.play(); if(p && p.catch) p.catch(err=>{ if(err && err.name==="NotAllowedError") return; fb(); });
+    }catch(e){ this.device(t); }
   }
 };
 try{ if("speechSynthesis" in window){ speechSynthesis.getVoices(); speechSynthesis.addEventListener("voiceschanged",()=>{}); } }catch(e){}
