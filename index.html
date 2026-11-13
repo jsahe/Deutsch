@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Deutsch">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f6f5f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16171a" media="(prefers-color-scheme: dark)">
+<title>Deutsch</title>
+<style>
+:root{
+  --bg:#f6f5f2; --card:#ffffff; --text:#1c1d20; --muted:#6b6e76; --line:#e2e0db;
+  --accent:#2f5bd3; --accent-ink:#ffffff; --ok:#1a7f37; --ok-bg:#e3f4e8; --bad:#c62f2f; --bad-bg:#fbe6e6;
+  --warn:#8a5a00; --warn-bg:#fff3d6; --chip:#eceae5;
+  --safe-t:env(safe-area-inset-top,0px); --safe-b:env(safe-area-inset-bottom,0px);
+  --safe-l:env(safe-area-inset-left,0px); --safe-r:env(safe-area-inset-right,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#16171a; --card:#212328; --text:#ecebe8; --muted:#9a9ca3; --line:#33363d;
+    --accent:#7d9cff; --accent-ink:#0f1220; --ok:#5fd07e; --ok-bg:#183223; --bad:#ff7b7b; --bad-bg:#3a1d1f;
+    --warn:#f0c46a; --warn-bg:#3a3018; --chip:#2c2f35;
+  }
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--text)}
+body{font:17px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;
+  padding:calc(var(--safe-t) + 8px) calc(var(--safe-r) + 16px) calc(var(--safe-b) + 84px) calc(var(--safe-l) + 16px);
+  -webkit-text-size-adjust:100%}
+h1{font-size:28px;line-height:1.2;margin:8px 0 4px}
+h2{font-size:21px;line-height:1.25;margin:20px 0 8px}
+h3{font-size:18px;margin:16px 0 6px}
+p{margin:8px 0}
+.muted{color:var(--muted)}
+.small{font-size:15px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+button,.btn{font:inherit;font-size:17px;min-height:44px;min-width:44px;border-radius:12px;border:1px solid var(--line);
+  background:var(--card);color:var(--text);padding:10px 16px;cursor:pointer}
+button.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+button.big{width:100%;min-height:54px;font-size:18px}
+button:disabled{opacity:.45}
+button.link{border:none;background:none;color:var(--accent);padding:10px 4px}
+input[type=text],textarea,select{font:inherit;font-size:17px;width:100%;min-height:44px;border-radius:10px;border:1px solid var(--line);
+  background:var(--bg);color:var(--text);padding:10px 12px}
+textarea{min-height:96px;resize:vertical}
+input.blank{display:inline-block;width:auto;min-width:90px;max-width:100%;margin:2px 4px;padding:6px 10px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.row > *{flex:1 1 auto}
+.bar{height:8px;border-radius:4px;background:var(--chip);overflow:hidden;margin:8px 0}
+.bar > div{height:100%;background:var(--accent);transition:width .25s}
+.chip{display:inline-block;padding:2px 10px;border-radius:999px;background:var(--chip);font-size:14px;margin:2px 4px 2px 0}
+.ok{color:var(--ok)} .bad{color:var(--bad)}
+.fb{border-radius:10px;padding:10px 12px;margin-top:10px;font-size:16px}
+.fb.ok{background:var(--ok-bg)} .fb.bad{background:var(--bad-bg)} .fb.warn{background:var(--warn-bg);color:var(--warn)}
+.opt{display:block;width:100%;text-align:left;margin:6px 0}
+.opt.sel-ok{background:var(--ok-bg);border-color:var(--ok)}
+.opt.sel-bad{background:var(--bad-bg);border-color:var(--bad)}
+.item{border-top:1px solid var(--line);padding:14px 0}
+.item:first-child{border-top:none}
+.prompt{font-size:18px;margin-bottom:8px}
+.tabbar{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--card);border-top:1px solid var(--line);
+  padding:4px calc(var(--safe-r) + 4px) calc(var(--safe-b) + 4px) calc(var(--safe-l) + 4px);z-index:5}
+.tabbar button{flex:1;border:none;background:none;border-radius:10px;font-size:14px;min-height:52px;color:var(--muted);padding:6px 2px}
+.tabbar button .ic{display:block;font-size:20px;line-height:1.1}
+.tabbar button.on{color:var(--accent);font-weight:600}
+.day{display:flex;align-items:center;gap:12px;width:100%;text-align:left;margin:8px 0;padding:12px 14px}
+.day .dot{width:14px;height:14px;border-radius:50%;flex:0 0 14px;border:2px solid var(--muted)}
+.day .dot.done{background:var(--ok);border-color:var(--ok)}
+.day .dot.part{background:linear-gradient(90deg,var(--accent) 50%,transparent 50%);border-color:var(--accent)}
+.day .grow{flex:1}
+.day.today{border-color:var(--accent)}
+/* player */
+#player{position:fixed;inset:0;background:var(--bg);z-index:10;display:none;flex-direction:column}
+#player.open{display:flex}
+#pHead{padding:calc(var(--safe-t) + 6px) calc(var(--safe-r) + 12px) 6px calc(var(--safe-l) + 12px);border-bottom:1px solid var(--line);background:var(--card)}
+#pBody{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:8px calc(var(--safe-r) + 16px) 24px calc(var(--safe-l) + 16px)}
+#pFoot{display:flex;gap:10px;padding:10px calc(var(--safe-r) + 12px) calc(var(--safe-b) + 10px) calc(var(--safe-l) + 12px);border-top:1px solid var(--line);background:var(--card)}
+#pFoot button{flex:1}
+.flip{display:block;width:100%;min-height:96px;margin:8px 0;text-align:center;font-size:21px;font-weight:600}
+.flip .ex{display:block;font-size:15px;font-weight:400;color:var(--muted);margin-top:6px}
+.flip.back{background:var(--chip)}
+.tokens{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.tokens button{padding:8px 12px}
+.built{min-height:52px;border:1px dashed var(--line);border-radius:10px;padding:4px}
+.match{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.match button{width:100%;text-align:left;font-size:16px}
+.match button.picked{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.match button.done{background:var(--ok-bg);border-color:var(--ok)}
+.match button.flash{background:var(--bad-bg);border-color:var(--bad)}
+.md table{border-collapse:collapse;width:100%;font-size:16px;margin:8px 0;display:block;overflow-x:auto}
+.md th,.md td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.md ul,.md ol{padding-left:22px;margin:6px 0}
+.german{font-size:18px}
+pre.report{white-space:pre-wrap;word-break:break-word;font:14px/1.45 ui-monospace,Menlo,monospace;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.rate button{flex:1}
+.rate button.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--safe-b) + 90px);background:var(--text);color:var(--bg);padding:10px 16px;border-radius:12px;z-index:20;font-size:15px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+</style>
+</head>
+<body>
+<main id="app"></main>
+
+<nav class="tabbar" id="tabbar">
+  <button data-tab="today"><span class="ic">☀︎</span>Today</button>
+  <button data-tab="week"><span class="ic">▦</span>Week</button>
+  <button data-tab="report"><span class="ic">✓</span>Report</button>
+  <button data-tab="settings"><span class="ic">⚙︎</span>Settings</button>
+</nav>
+
+<section id="player" aria-modal="true">
+  <div id="pHead">
+    <div class="row" style="flex-wrap:nowrap">
+      <button class="link" id="pClose" style="flex:0 0 auto">✕ Close</button>
+      <div id="pTitle" style="flex:1;text-align:center;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></div>
+      <div id="pCount" class="muted small" style="flex:0 0 auto;text-align:right;min-width:56px"></div>
+    </div>
+    <div class="bar"><div id="pBar" style="width:0"></div></div>
+  </div>
+  <div id="pBody"></div>
+  <div id="pFoot">
+    <button id="pBack">‹ Back</button>
+    <button id="pNext" class="primary">Next ›</button>
+  </div>
+</section>
+
+<div class="toast" id="toast"></div>
+
+<script>
+"use strict";
+/* ---------- storage (all keys prefixed dl_) ---------- */
+const store = {
+  get(key, fallback){ try{ const v = localStorage.getItem("dl_"+key); return v === null ? fallback : JSON.parse(v); }catch(e){ return fallback; } },
+  set(key, val){ try{ localStorage.setItem("dl_"+key, JSON.stringify(val)); return true; }catch(e){ toast("Could not save (storage full or blocked)"); return false; } },
+  del(key){ try{ localStorage.removeItem("dl_"+key); }catch(e){} },
+  keys(){ const out=[]; try{ for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(k && k.indexOf("dl_")===0) out.push(k); } }catch(e){} return out; }
+};
+const pad2 = n => String(n).padStart(2,"0");
+
+/* ---------- dates (local, date-only) ---------- */
+function parseDate(s){ const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s||""); return m ? new Date(+m[1],+m[2]-1,+m[3]) : null; }
+function today(){ const d=new Date(); return new Date(d.getFullYear(),d.getMonth(),d.getDate()); }
+function daysBetween(a,b){ return Math.round((b-a)/86400000); }
+function fmtDate(d){ return d.toLocaleDateString(undefined,{weekday:"short",month:"short",day:"numeric"}); }
+
+/* ---------- state ---------- */
+const S = { index:null, weeks:{}, currentWeek:null, viewWeek:null, tab:"today", offline:false };
+
+function knownWeeks(){
+  const map = {};
+  (store.get("index",{weeks:[]}).weeks||[]).forEach(w=>{ map[w.week]={week:w.week,startDate:w.startDate,file:w.file}; });
+  (store.get("imported",[])||[]).forEach(w=>{ if(!map[w.week]) map[w.week]={week:w.week,startDate:w.startDate,file:null}; });
+  return Object.values(map).sort((a,b)=>a.week-b.week);
+}
+function findCurrent(list){
+  const t=today();
+  const hit=list.find(w=>{ const s=parseDate(w.startDate); if(!s) return false; const d=daysBetween(s,t); return d>=0 && d<7; });
+  return hit ? hit.week : null;
+}
+function getWeek(n){ if(S.weeks[n]) return S.weeks[n]; const w=store.get("week_"+pad2(n),null); if(w) S.weeks[n]=w; return w; }
+
+async function fetchJSON(url){
+  const r = await fetch(url+(url.indexOf("?")>-1?"&":"?")+"t="+Date.now(),{cache:"no-store"});
+  if(!r.ok) throw new Error("HTTP "+r.status);
+  return r.json();
+}
+async function loadWeekFile(entry){
+  if(!entry || !entry.file) return getWeek(entry && entry.week);
+  try{
+    const w = await fetchJSON(entry.file);
+    const err = validateWeek(w);
+    if(err) throw new Error(err);
+    S.weeks[w.week]=w; store.set("week_"+pad2(w.week), w);
+    return w;
+  }catch(e){ S.offline=true; return getWeek(entry.week); }
+}
+async function boot(){
+  try{
+    const idx = await fetchJSON("weeks/index.json");
+    if(idx && Array.isArray(idx.weeks)){ store.set("index", idx); }
+  }catch(e){ S.offline=true; }
+  const list = knownWeeks();
+  S.currentWeek = findCurrent(list);
+  if(S.currentWeek===null && list.length){
+    // no week covers today: show the latest week that has started, else the first one
+    const t=today(); const started=list.filter(w=>{const s=parseDate(w.startDate); return s && s<=t;});
+    S.viewWeek = (started.length ? started[started.length-1] : list[0]).week;
+  } else S.viewWeek = S.currentWeek;
+  const entry = list.find(w=>w.week===S.viewWeek);
+  if(entry) await loadWeekFile(entry);
+  render();
+}
+
+/* ---------- results ---------- */
+function resKey(n){ return "results_"+pad2(n); }
+function getRes(n){ const r=store.get(resKey(n),null); return r && r.days ? r : {days:{}}; }
+function dayRes(res,d){ if(!res.days[d]) res.days[d]={items:{},ratings:{},timeMs:0,notes:"",visited:[],done:false,last:0}; return res.days[d]; }
+function saveRes(n,res){ store.set(resKey(n),res); }
+
+function dayStats(week,d){
+  const res=getRes(week.week); const dr=res.days[d];
+  const day=week.days.find(x=>x.day===d);
+  const total = day ? day.sections.length : 0;
+  if(!dr) return {status:"none",score:null,answered:0,total};
+  const items=Object.values(dr.items);
+  const right=items.filter(i=>i.correct).length;
+  const score = items.length ? Math.round(100*right/items.length) : null;
+  const status = dr.done ? "done" : (dr.visited.length || items.length ? "part" : "none");
+  return {status,score,answered:items.length,total};
+}
+
+/* ---------- answer checking ---------- */
+function norm(s,keepCase){
+  let t=String(s==null?"":s).normalize("NFC").replace(/[‘’]/g,"'").replace(/[“”„]/g,'"').trim().replace(/\s+/g," ");
+  t=t.replace(/[.!?,;:…]+$/,"").trim();
+  return keepCase ? t : t.toLowerCase();
+}
+function subst(s){ return s.replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/Ä/g,"Ae").replace(/Ö/g,"Oe").replace(/Ü/g,"Ue").replace(/ß/g,"ss"); }
+/* returns {ok, umlautNote} */
+function check(user, accepted, keepCase){
+  const u=norm(user,keepCase);
+  if(!u) return {ok:false};
+  for(const a of accepted){ if(norm(a,keepCase)===u) return {ok:true,umlautNote:false}; }
+  for(const a of accepted){ if(subst(norm(a,keepCase))===subst(u)) return {ok:true,umlautNote:true}; }
+  return {ok:false};
+}
+
+/* ---------- mini markdown ---------- */
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function inline(s){
+  return esc(s).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[^*])\*(?!\s)(.+?)\*(?!\*)/g,"$1<em>$2</em>");
+}
+function md(src){
+  const lines=String(src||"").replace(/\r/g,"").split("\n"); let html="", i=0;
+  while(i<lines.length){
+    const l=lines[i];
+    if(/^\s*\|/.test(l)){
+      const rows=[]; while(i<lines.length && /^\s*\|/.test(lines[i])){ rows.push(lines[i]); i++; }
+      const cells=r=>r.trim().replace(/^\|/,"").replace(/\|$/,"").split("|").map(c=>c.trim());
+      let out="<table>"; let body=rows;
+      if(rows.length>1 && /^\s*\|?\s*:?-{2,}/.test(rows[1])){ out+="<thead><tr>"+cells(rows[0]).map(c=>"<th>"+inline(c)+"</th>").join("")+"</tr></thead>"; body=rows.slice(2); }
+      out+="<tbody>"+body.map(r=>"<tr>"+cells(r).map(c=>"<td>"+inline(c)+"</td>").join("")+"</tr>").join("")+"</tbody></table>";
+      html+=out; continue;
+    }
+    if(/^\s*[-*]\s+/.test(l)){ let out="<ul>"; while(i<lines.length && /^\s*[-*]\s+/.test(lines[i])){ out+="<li>"+inline(lines[i].replace(/^\s*[-*]\s+/,""))+"</li>"; i++; } html+=out+"</ul>"; continue; }
+    if(/^\s*\d+[.)]\s+/.test(l)){ let out="<ol>"; while(i<lines.length && /^\s*\d+[.)]\s+/.test(lines[i])){ out+="<li>"+inline(lines[i].replace(/^\s*\d+[.)]\s+/,""))+"</li>"; i++; } html+=out+"</ol>"; continue; }
+    if(/^#{1,4}\s+/.test(l)){ html+="<h3>"+inline(l.replace(/^#+\s+/,""))+"</h3>"; i++; continue; }
+    if(!l.trim()){ i++; continue; }
+    const para=[]; while(i<lines.length && lines[i].trim() && !/^\s*(\||[-*]\s|\d+[.)]\s|#)/.test(lines[i])){ para.push(lines[i]); i++; }
+    html+="<p>"+para.map(inline).join("<br>")+"</p>";
+  }
+  return '<div class="md">'+html+"</div>";
+}
+
+/* ---------- validation ---------- */
+const KINDS=["multiple_choice","fill_blank","translate","match","order"];
+const TYPES=["reading","grammar","vocab","exercises","writing","speaking"];
+function validateWeek(w){
+  if(!w || typeof w!=="object") return "Not a JSON object.";
+  if(!Number.isInteger(w.week)) return "\"week\" must be a whole number.";
+  if(!parseDate(w.startDate)) return "\"startDate\" must look like 2026-11-23.";
+  if(!Array.isArray(w.days) || !w.days.length) return "\"days\" must be a non-empty list.";
+  const ids=new Set();
+  for(const d of w.days){
+    if(!Number.isInteger(d.day) || d.day<1 || d.day>7) return "Each day needs \"day\" from 1 to 7.";
+    if(!Array.isArray(d.sections)) return "Day "+d.day+" has no \"sections\" list.";
+    for(const s of d.sections){
+      if(TYPES.indexOf(s.type)<0) return "Day "+d.day+": unknown section type \""+s.type+"\".";
+      if(s.type==="exercises"){
+        if(!Array.isArray(s.items)) return "Day "+d.day+": exercises need \"items\".";
+        for(const it of s.items){
+          if(!it.id) return "Day "+d.day+": an exercise has no \"id\".";
+          if(ids.has(it.id)) return "Duplicate exercise id \""+it.id+"\".";
+          ids.add(it.id);
+          if(KINDS.indexOf(it.kind)<0) return "Item "+it.id+": unknown kind \""+it.kind+"\".";
+          if(it.kind==="multiple_choice" && (!Array.isArray(it.options) || !Number.isInteger(it.answer))) return "Item "+it.id+": needs options and a numeric answer.";
+          if(it.kind==="fill_blank" && !Array.isArray(it.answers)) return "Item "+it.id+": needs \"answers\".";
+          if(it.kind==="translate" && !it.modelAnswer) return "Item "+it.id+": needs \"modelAnswer\".";
+          if(it.kind==="match" && !Array.isArray(it.pairs)) return "Item "+it.id+": needs \"pairs\".";
+          if(it.kind==="order" && !it.answer) return "Item "+it.id+": needs \"answer\".";
+        }
+      }
+    }
+  }
+  return null;
+}
+
+/* ---------- helpers ---------- */
+const $ = id => document.getElementById(id);
+function h(tag, attrs, html){ const e=document.createElement(tag); if(attrs) for(const k in attrs){ if(k==="class") e.className=attrs[k]; else if(k.indexOf("on")===0) e.addEventListener(k.slice(2),attrs[k]); else e.setAttribute(k,attrs[k]); } if(html!=null) e.innerHTML=html; return e; }
+let toastT; function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("show"),1800); }
+function shuffle(a){ const b=a.slice(); for(let i=b.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [b[i],b[j]]=[b[j],b[i]]; } return b; }
+async function copyText(txt){
+  try{ await navigator.clipboard.writeText(txt); toast("Copied"); return; }catch(e){}
+  const ta=h("textarea"); ta.value=txt; ta.setAttribute("readonly",""); ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta);
+  ta.select(); ta.setSelectionRange(0,txt.length); let ok=false; try{ ok=document.execCommand("copy"); }catch(e){}
+  ta.remove(); toast(ok?"Copied":"Copy failed — select the text and copy it");
+}
+function currentDayNum(week){ const s=parseDate(week.startDate); const d=daysBetween(s,today())+1; return (d>=1 && d<=7) ? d : null; }
+
+/* ---------- screens ---------- */
+function render(){
+  document.querySelectorAll("#tabbar button").forEach(b=>b.classList.toggle("on",b.dataset.tab===S.tab));
+  const app=$("app"); app.innerHTML="";
+  ({today:renderToday,week:renderWeek,report:renderReport,settings:renderSettings})[S.tab](app);
+  window.scrollTo(0,0);
+}
+document.querySelectorAll("#tabbar button").forEach(b=>b.addEventListener("click",()=>{ S.tab=b.dataset.tab; render(); }));
+
+function offlineNote(app){ if(S.offline) app.appendChild(h("p",{class:"muted small"},"Offline: showing saved lessons.")); }
+
+function renderToday(app){
+  app.appendChild(h("h1",null,"Heute"));
+  offlineNote(app);
+  const week = S.currentWeek!==null ? getWeek(S.currentWeek) : null;
+  if(!week){
+    app.appendChild(h("div",{class:"card"},"<p><strong>No lesson for today.</strong></p><p class='muted'>There's no week whose dates include today. Ask your tutor to “Generate week N”, upload it, or import it in Settings. Past weeks are under Week.</p>"));
+    return;
+  }
+  const d=currentDayNum(week); const day=week.days.find(x=>x.day===d);
+  app.appendChild(h("p",{class:"muted"},"Week "+week.week+" · "+esc(week.theme||"")+" · Day "+d+" · "+fmtDate(today())));
+  if(!day){ app.appendChild(h("div",{class:"card"},"<p>Day "+d+" isn't in this week's file.</p>")); return; }
+  const st=dayStats(week,d); const res=getRes(week.week); const dr=res.days[d];
+  const seen = dr ? dr.visited.length : 0;
+  const card=h("div",{class:"card"});
+  card.innerHTML="<h2 style='margin-top:0'>"+esc(day.title||("Day "+d))+"</h2>"+
+    (day.goals&&day.goals.length?"<ul>"+day.goals.map(g=>"<li>"+esc(g)+"</li>").join("")+"</ul>":"")+
+    "<div class='bar'><div style='width:"+(st.total?Math.round(100*seen/st.total):0)+"%'></div></div>"+
+    "<p class='muted small'>"+seen+" of "+st.total+" sections"+(st.score!==null?" · score "+st.score+"%":"")+(st.status==="done"?" · done ✓":"")+"</p>";
+  const btn=h("button",{class:"primary big",onclick:()=>openPlayer(week,d)}, st.status==="none"?"Start lesson":(st.status==="done"?"Review lesson":"Continue lesson"));
+  card.appendChild(btn); app.appendChild(card);
+}
+
+function weekSelect(app,onChange){
+  const list=knownWeeks(); if(list.length<2) return;
+  const sel=h("select",{"aria-label":"Choose week"});
+  list.forEach(w=>{ const o=h("option",{value:w.week},"Week "+w.week+" ("+w.startDate+")"+(w.week===S.currentWeek?" · current":"")); if(w.week===S.viewWeek) o.selected=true; sel.appendChild(o); });
+  sel.addEventListener("change",async()=>{ S.viewWeek=+sel.value; const e=list.find(w=>w.week===S.viewWeek); await loadWeekFile(e); onChange(); });
+  app.appendChild(sel);
+}
+
+function renderWeek(app){
+  app.appendChild(h("h1",null,"Woche"));
+  offlineNote(app);
+  weekSelect(app,render);
+  const week=S.viewWeek!==null?getWeek(S.viewWeek):null;
+  if(!week){ app.appendChild(h("div",{class:"card"},"<p>No week loaded. Import one in Settings.</p>")); return; }
+  app.appendChild(h("p",{class:"muted"},"Week "+week.week+" · "+esc(week.theme||"")+" · "+esc(week.level||"")+" · from "+fmtDate(parseDate(week.startDate))));
+  const todayN = week.week===S.currentWeek ? currentDayNum(week) : null;
+  for(let d=1; d<=7; d++){
+    const day=week.days.find(x=>x.day===d); const st=dayStats(week,d);
+    const date=new Date(parseDate(week.startDate)); date.setDate(date.getDate()+d-1);
+    const label = st.status==="done"?"Done":(st.status==="part"?"Partly done":"Not started");
+    const b=h("button",{class:"day"+(d===todayN?" today":""),onclick:()=>{ if(day) openPlayer(week,d); }},
+      "<span class='dot "+(st.status==="done"?"done":st.status==="part"?"part":"")+"'></span>"+
+      "<span class='grow'><strong>Day "+d+(d===todayN?" · today":"")+"</strong><br><span class='small muted'>"+fmtDate(date)+" · "+esc(day?day.title:"(no lesson)")+"</span></span>"+
+      "<span class='small' style='text-align:right'>"+label+(st.score!==null?"<br><strong>"+st.score+"%</strong>":"")+"</span>");
+    if(!day) b.disabled=true;
+    app.appendChild(b);
+  }
+}
+
+/* ---------- report ---------- */
+function correctText(it){
+  switch(it.kind){
+    case "multiple_choice": return (it.options||[])[it.answer];
+    case "fill_blank": return (it.answers||[]).map(a=>Array.isArray(a)?a[0]:a).join(" / ");
+    case "translate": return it.modelAnswer;
+    case "match": return (it.pairs||[]).map(p=>p[0]+" = "+p[1]).join("; ");
+    case "order": return it.answer;
+  }
+  return "";
+}
+function vocabOf(week){
+  const words=[];
+  week.days.forEach(d=>d.sections.forEach(s=>{ if(s.type==="vocab") (s.words||[]).forEach(w=>words.push(w)); }));
+  return words;
+}
+function buildReport(week){
+  const res=getRes(week.week); const lines=[]; let done=0, right=0, total=0; const per=[]; const missed=[]; const overr=[]; const rate={writing:[],speaking:[]}; const notes=[]; const weak=new Set();
+  const itemsById={}; week.days.forEach(d=>d.sections.forEach(s=>{ if(s.type==="exercises") s.items.forEach(it=>itemsById[it.id]={it,day:d.day}); }));
+  const vocab=vocabOf(week).map(w=>({de:w.de, core:norm(String(w.de).replace(/^(der|die|das)\s+/i,""))})).filter(w=>w.core.length>=3);
+  for(let d=1; d<=7; d++){
+    const dr=res.days[d]; if(!dr){ per.push("D"+d+" –"); continue; }
+    if(dr.done) done++;
+    const its=Object.values(dr.items); const r=its.filter(i=>i.correct).length; right+=r; total+=its.length;
+    per.push("D"+d+" "+(its.length?Math.round(100*r/its.length)+"%":"–"));
+    its.forEach(rec=>{
+      const ref=itemsById[rec.id]; if(!ref) return; const it=ref.it;
+      if(!rec.correct) {
+        missed.push("- [D"+d+" "+it.kind+" "+it.id+"] answered \""+(rec.userAnswer||"")+"\" → correct \""+correctText(it)+"\" (topic: "+(it.topic||"–")+")");
+        const hay=norm((it.prompt||"")+" "+correctText(it)+" "+(it.words||[]).join(" "));
+        (it.words||[]).forEach(w=>weak.add(w));
+        vocab.forEach(w=>{ if(hay.indexOf(w.core)>-1) weak.add(w.de); });
+      }
+      if(rec.overridden) overr.push("- [D"+d+" "+it.id+"] mine: \""+rec.userAnswer+"\" | model: \""+it.modelAnswer+"\"");
+    });
+    Object.values(dr.ratings||{}).forEach(x=>{ if(rate[x.type] && x.value) rate[x.type].push(x.value); });
+    if(dr.notes && dr.notes.trim()) notes.push("D"+d+": "+dr.notes.trim());
+  }
+  const avg=a=>a.length?(Math.round(10*a.reduce((x,y)=>x+y,0)/a.length)/10)+"/3":"–";
+  lines.push("PROGRESS REPORT — Week "+week.week+" ("+week.startDate+")");
+  lines.push("Days completed: "+done+"/7   Overall score: "+(total?Math.round(100*right/total)+"%":"–"));
+  lines.push("Per day: "+per.join(" | "));
+  const mins=[1,2,3,4,5,6,7].map(d=>{ const dr=res.days[d]; return dr&&dr.timeMs?("D"+d+" "+Math.round(dr.timeMs/60000)+"m"):null; }).filter(Boolean);
+  if(mins.length) lines.push("Time: "+mins.join(" | "));
+  lines.push("Missed items:"); lines.push(missed.length?missed.join("\n"):"- none");
+  lines.push("Overridden translations:"); lines.push(overr.length?overr.join("\n"):"- none");
+  lines.push("Weak words (missed ≥1x): "+(weak.size?Array.from(weak).join(", "):"none"));
+  lines.push("Self-ratings: writing "+avg(rate.writing)+", speaking "+avg(rate.speaking));
+  lines.push("My notes: "+(notes.length?notes.join(" | "):"–"));
+  return lines.join("\n");
+}
+function renderReport(app){
+  app.appendChild(h("h1",null,"Bericht"));
+  weekSelect(app,render);
+  const week=S.viewWeek!==null?getWeek(S.viewWeek):null;
+  if(!week){ app.appendChild(h("div",{class:"card"},"<p>No week loaded yet.</p>")); return; }
+  const txt=buildReport(week);
+  app.appendChild(h("button",{class:"primary big",onclick:()=>copyText(txt)},"Copy progress report"));
+  app.appendChild(h("p",{class:"muted small"},"Paste it into the chat after “Progress report:”."));
+  const pre=h("pre",{class:"report"}); pre.textContent=txt; app.appendChild(pre);
+}
+
+/* ---------- settings ---------- */
+function renderSettings(app){
+  app.appendChild(h("h1",null,"Settings"));
+  // import week
+  const c1=h("div",{class:"card"},"<h2 style='margin-top:0'>Import a week</h2><p class='muted small'>Paste week JSON or pick a .json file.</p>");
+  const ta=h("textarea",{placeholder:'{ "week": 1, "startDate": "2026-11-23", ... }'});
+  const file=h("input",{type:"file",accept:".json,application/json"});
+  file.style.margin="8px 0";
+  file.addEventListener("change",()=>{ const f=file.files[0]; if(!f) return; const r=new FileReader(); r.onload=()=>{ ta.value=r.result; }; r.readAsText(f); });
+  const msg=h("p",{class:"small"});
+  c1.appendChild(ta); c1.appendChild(file);
+  c1.appendChild(h("button",{class:"primary big",onclick:()=>{
+    let w; try{ w=JSON.parse(ta.value); }catch(e){ msg.className="small bad"; msg.textContent="Invalid JSON: "+e.message; return; }
+    const err=validateWeek(w); if(err){ msg.className="small bad"; msg.textContent=err; return; }
+    store.set("week_"+pad2(w.week),w); S.weeks[w.week]=w;
+    const imp=(store.get("imported",[])||[]).filter(x=>x.week!==w.week); imp.push({week:w.week,startDate:w.startDate}); store.set("imported",imp);
+    S.currentWeek=findCurrent(knownWeeks()); if(S.viewWeek===null||S.viewWeek===w.week||S.currentWeek===w.week) S.viewWeek=w.week;
+    msg.className="small ok"; msg.textContent="Saved week "+w.week+" ("+w.startDate+")."; ta.value="";
+  }},"Save week"));
+  c1.appendChild(msg); app.appendChild(c1);
+
+  // backup
+  const c2=h("div",{class:"card"},"<h2 style='margin-top:0'>Backup</h2>");
+  c2.appendChild(h("button",{class:"big",onclick:()=>{
+    const data={}; store.keys().forEach(k=>{ try{ data[k]=JSON.parse(localStorage.getItem(k)); }catch(e){} });
+    copyText(JSON.stringify({app:"deutsch",exported:new Date().toISOString(),data}));
+  }},"Copy backup to clipboard"));
+  const tb=h("textarea",{placeholder:"Paste a backup here to restore it"}); tb.style.marginTop="12px";
+  const m2=h("p",{class:"small"});
+  c2.appendChild(tb);
+  c2.appendChild(h("button",{class:"big",onclick:()=>{
+    let b; try{ b=JSON.parse(tb.value); }catch(e){ m2.className="small bad"; m2.textContent="Invalid JSON."; return; }
+    if(!b||!b.data||typeof b.data!=="object"){ m2.className="small bad"; m2.textContent="That isn't a backup from this app."; return; }
+    if(!confirm("Restore this backup? It overwrites matching data on this phone.")) return;
+    let n=0; Object.keys(b.data).forEach(k=>{ if(k.indexOf("dl_")===0){ try{ localStorage.setItem(k,JSON.stringify(b.data[k])); n++; }catch(e){} } });
+    S.weeks={}; m2.className="small ok"; m2.textContent="Restored "+n+" items."; tb.value="";
+    S.currentWeek=findCurrent(knownWeeks()); S.viewWeek=S.currentWeek!==null?S.currentWeek:S.viewWeek;
+  }},"Restore backup"));
+  c2.appendChild(m2); app.appendChild(c2);
+
+  // reset week
+  const c3=h("div",{class:"card"},"<h2 style='margin-top:0'>Reset a week</h2><p class='muted small'>Deletes your answers for that week. The lessons stay.</p>");
+  const sel=h("select"); knownWeeks().forEach(w=>sel.appendChild(h("option",{value:w.week},"Week "+w.week+" ("+w.startDate+")")));
+  c3.appendChild(sel);
+  c3.appendChild(h("button",{class:"big",style:"margin-top:10px;color:var(--bad)",onclick:()=>{
+    if(!sel.value) return; if(!confirm("Delete all answers for week "+sel.value+"?")) return;
+    store.del(resKey(+sel.value)); toast("Week "+sel.value+" reset");
+  }},"Reset week"));
+  app.appendChild(c3);
+  app.appendChild(h("p",{class:"muted small"},"Lessons are fetched from weeks/index.json; saved copies are used offline."));
+}
+
+/* ---------- player ---------- */
+const P={ week:null, d:0, i:0, res:null, dr:null, t0:0 };
+function openPlayer(week,d){
+  P.week=week; P.d=d; P.res=getRes(week.week); P.dr=dayRes(P.res,d);
+  const day=week.days.find(x=>x.day===d);
+  P.day=day; P.i = P.dr.done ? 0 : Math.min(P.dr.last||0, day.sections.length);
+  P.t0=Date.now();
+  $("player").classList.add("open"); document.body.style.overflow="hidden";
+  showSection();
+}
+function stopTimer(){ if(P.t0){ P.dr.timeMs=(P.dr.timeMs||0)+(Date.now()-P.t0); P.t0=0; persist(); } }
+function persist(){ P.res.days[P.d]=P.dr; saveRes(P.week.week,P.res); }
+function closePlayer(){ stopTimer(); $("player").classList.remove("open"); document.body.style.overflow=""; render(); }
+document.addEventListener("visibilitychange",()=>{ if(!$("player").classList.contains("open")) return; if(document.hidden) stopTimer(); else P.t0=Date.now(); });
+$("pClose").addEventListener("click",closePlayer);
+$("pBack").addEventListener("click",()=>{ if(P.i>0){ P.i--; showSection(); } });
+$("pNext").addEventListener("click",()=>{
+  const n=P.day.sections.length;
+  if(P.i<n){ P.i++; showSection(); }
+  else { P.dr.done=true; persist(); closePlayer(); toast("Day "+P.d+" done"); }
+});
+
+function showSection(){
+  const n=P.day.sections.length; const body=$("pBody"); body.innerHTML=""; body.scrollTop=0;
+  $("pTitle").textContent="Day "+P.d+" · "+(P.day.title||"");
+  if(P.i<n && P.dr.visited.indexOf(P.i)<0) P.dr.visited.push(P.i);
+  P.dr.last=P.i; persist();
+  $("pBar").style.width=Math.round(100*Math.min(P.dr.visited.length,n)/n)+"%";
+  $("pCount").textContent = P.i<n ? (P.i+1)+"/"+n : "End";
+  $("pBack").disabled = P.i===0;
+  $("pNext").textContent = P.i<n ? "Next ›" : "Finish ✓";
+  if(P.i>=n){ renderFinish(body); return; }
+  const s=P.day.sections[P.i];
+  ({reading:renderReading,grammar:renderGrammar,vocab:renderVocab,exercises:renderExercises,writing:renderWriting,speaking:renderWriting})[s.type](body,s,P.i);
+}
+
+function renderReading(body,s){
+  body.appendChild(h("h2",null,esc(s.title||"Lesen")));
+  body.appendChild(h("div",{class:"card german"},md(s.text)));
+  if(s.translation){
+    const tr=h("div",{class:"card muted"},md(s.translation)); tr.style.display="none";
+    const b=h("button",{class:"big",onclick:()=>{ const on=tr.style.display==="none"; tr.style.display=on?"block":"none"; b.textContent=on?"Hide translation":"Show translation"; }},"Show translation");
+    body.appendChild(b); body.appendChild(tr);
+  }
+}
+function renderGrammar(body,s){
+  body.appendChild(h("h2",null,esc(s.title||"Grammatik")));
+  body.appendChild(h("div",{class:"card"},md(s.explanation)));
+  if(s.examples&&s.examples.length) body.appendChild(h("div",{class:"card german"},"<ul>"+s.examples.map(e=>"<li>"+inline(e)+"</li>").join("")+"</ul>"));
+}
+function renderVocab(body,s){
+  body.appendChild(h("h2",null,"Neue Wörter"));
+  body.appendChild(h("p",{class:"muted small"},"Tap a card to flip it."));
+  (s.words||[]).forEach(w=>{
+    let back=false;
+    const b=h("button",{class:"flip"});
+    const draw=()=>{ b.classList.toggle("back",back); b.innerHTML = back ? esc(w.en)+(w.example?"<span class='ex'>"+esc(w.example)+"</span>":"") : esc(w.de)+(w.plural?"<span class='ex'>Pl. "+esc(w.plural)+"</span>":""); };
+    b.addEventListener("click",()=>{ back=!back; draw(); }); draw(); body.appendChild(b);
+  });
+}
+
+function record(it,correct,userAnswer,overridden){
+  P.dr.items[it.id]={id:it.id,correct:!!correct,userAnswer:String(userAnswer==null?"":userAnswer),overridden:!!overridden,timestamp:new Date().toISOString(),topic:it.topic||"",kind:it.kind};
+  persist();
+}
+function fbBox(ok,text){ return h("div",{class:"fb "+(ok?"ok":"bad")},(ok?"<strong>Richtig.</strong> ":"<strong>Nicht ganz.</strong> ")+(text||"")); }
+
+function renderExercises(body,s){
+  body.appendChild(h("h2",null,esc(s.title||"Übungen")));
+  const card=h("div",{class:"card"}); body.appendChild(card);
+  s.items.forEach((it,k)=>{
+    const box=h("div",{class:"item"}); card.appendChild(box);
+    box.appendChild(h("div",{class:"muted small"},(k+1)+" · "+esc(it.topic||"")));
+    ({multiple_choice:exMC,fill_blank:exFill,translate:exTrans,match:exMatch,order:exOrder})[it.kind](box,it,P.dr.items[it.id]);
+  });
+}
+function explain(it){ return it.explanation?esc(it.explanation):""; }
+
+function exMC(box,it,prev){
+  box.appendChild(h("div",{class:"prompt german"},inline(it.prompt)));
+  const btns=[]; const fbw=h("div");
+  const finish=(pick,ok)=>{
+    btns.forEach((b,j)=>{ b.disabled=true; if(j===it.answer) b.classList.add("sel-ok"); else if(j===pick) b.classList.add("sel-bad"); });
+    fbw.innerHTML=""; fbw.appendChild(fbBox(ok, ok?explain(it):"Answer: <strong>"+esc(it.options[it.answer])+"</strong>. "+explain(it)));
+  };
+  it.options.forEach((o,j)=>{ const b=h("button",{class:"opt german",onclick:()=>{ const ok=j===it.answer; record(it,ok,o,false); finish(j,ok); }},esc(o)); btns.push(b); box.appendChild(b); });
+  box.appendChild(fbw);
+  if(prev){ const j=it.options.indexOf(prev.userAnswer); finish(j,prev.correct); }
+}
+
+function exFill(box,it,prev){
+  const parts=String(it.prompt).split("___"); const p=h("div",{class:"prompt german"}); const inputs=[];
+  parts.forEach((t,j)=>{ p.appendChild(document.createTextNode(t)); if(j<parts.length-1){ const inp=h("input",{type:"text",class:"blank",autocapitalize:"off",autocorrect:"off",spellcheck:"false",autocomplete:"off","aria-label":"Blank "+(j+1)}); inputs.push(inp); p.appendChild(inp); } });
+  box.appendChild(p);
+  const btn=h("button",{class:"primary"},"Check"); const fbw=h("div"); box.appendChild(btn); box.appendChild(fbw);
+  const answers=(it.answers||[]).map(a=>Array.isArray(a)?a:[a]);
+  const show=(vals,ok,note)=>{
+    inputs.forEach((inp,j)=>{ inp.value=vals[j]||""; inp.disabled=true; }); btn.disabled=true;
+    fbw.innerHTML=""; const msg = ok ? (note?"Accepted — mind the umlaut. ":"")+explain(it) : "Answer: <strong>"+esc(answers.map(a=>a[0]).join(" / "))+"</strong>. "+explain(it);
+    const f=fbBox(ok,msg); if(ok&&note) f.className="fb warn"; fbw.appendChild(f);
+  };
+  btn.addEventListener("click",()=>{
+    const vals=inputs.map(i=>i.value); if(vals.every(v=>!v.trim())) return;
+    let ok=true, note=false;
+    vals.forEach((v,j)=>{ const r=check(v,answers[j]||[],!!it.strictCase); if(!r.ok) ok=false; if(r.umlautNote) note=true; });
+    record(it,ok,vals.join(" | "),false); show(vals,ok,note);
+  });
+  if(prev) show(String(prev.userAnswer).split(" | "),prev.correct,false);
+}
+
+function exTrans(box,it,prev){
+  box.appendChild(h("div",{class:"prompt"},(it.direction==="de-en"?"🇩🇪→🇬🇧 ":"🇬🇧→🇩🇪 ")+inline(it.prompt)));
+  const ta=h("textarea",{autocapitalize:"sentences",autocorrect:"off",spellcheck:"false",rows:"2"}); ta.style.minHeight="64px";
+  const btn=h("button",{class:"primary",style:"margin-top:8px"},"Check"); const fbw=h("div");
+  box.appendChild(ta); box.appendChild(btn); box.appendChild(fbw);
+  const accepted=(it.acceptable||[]).concat([it.modelAnswer]);
+  const lock=()=>{ ta.disabled=true; btn.disabled=true; };
+  const final=(ok,override,note)=>{
+    fbw.innerHTML=""; const f=fbBox(ok,(ok&&note?"Accepted — mind the umlaut. ":"")+(override?"Counted as right (your call). ":"")+"Model: <strong>"+esc(it.modelAnswer)+"</strong>"); if(ok&&note) f.className="fb warn"; fbw.appendChild(f);
+  };
+  btn.addEventListener("click",()=>{
+    const v=ta.value; if(!v.trim()) return; lock();
+    const r=check(v,accepted,false);
+    if(r.ok){ record(it,true,v,false); final(true,false,r.umlautNote); return; }
+    fbw.innerHTML="";
+    const f=h("div",{class:"fb bad"},"<strong>No exact match.</strong> Model answer: <strong>"+esc(it.modelAnswer)+"</strong>"+(it.explanation?"<br>"+explain(it):""));
+    const row=h("div",{class:"row",style:"margin-top:10px"});
+    row.appendChild(h("button",{onclick:()=>{ record(it,false,v,false); final(false,false); }},"I was wrong"));
+    row.appendChild(h("button",{class:"primary",onclick:()=>{ record(it,true,v,true); final(true,true); }},"Count it as right"));
+    f.appendChild(row); fbw.appendChild(f);
+  });
+  if(prev){ ta.value=prev.userAnswer; lock(); final(prev.correct,prev.overridden); }
+}
+
+function exMatch(box,it,prev){
+  box.appendChild(h("div",{class:"prompt"},inline(it.prompt||"Match the pairs.")));
+  const pairs=it.pairs||[]; const grid=h("div",{class:"match"}); box.appendChild(grid);
+  const fbw=h("div"); box.appendChild(fbw);
+  const left=pairs.map((p,j)=>({t:p[0],j})); const right=shuffle(pairs.map((p,j)=>({t:p[1],j})));
+  const lb=[], rb=[]; let pick=null, matched=0; const mistakes=[];
+  const finish=(ok,ua)=>{ fbw.innerHTML=""; fbw.appendChild(fbBox(ok, ok?explain(it):"Mistakes: "+esc(ua)+". "+explain(it))); };
+  for(let r=0;r<pairs.length;r++){
+    const L=h("button",{class:"german"},esc(left[r].t)); const R=h("button",null,esc(right[r].t));
+    L.dataset.j=left[r].j; R.dataset.j=right[r].j; lb.push(L); rb.push(R); grid.appendChild(L); grid.appendChild(R);
+    L.addEventListener("click",()=>{ if(L.disabled) return; lb.forEach(b=>b.classList.remove("picked")); L.classList.add("picked"); pick=L; });
+    R.addEventListener("click",()=>{
+      if(R.disabled||!pick) return;
+      if(pick.dataset.j===R.dataset.j){ [pick,R].forEach(b=>{ b.classList.remove("picked"); b.classList.add("done"); b.disabled=true; }); pick=null; matched++;
+        if(matched===pairs.length){ const ok=mistakes.length===0; const ua=ok?"all pairs":mistakes.join("; "); record(it,ok,ua,false); finish(ok,ua); } }
+      else { mistakes.push(pick.textContent+" ≠ "+R.textContent); const p=pick; [p,R].forEach(b=>b.classList.add("flash")); setTimeout(()=>[p,R].forEach(b=>b.classList.remove("flash")),450); }
+    });
+  }
+  if(prev){ lb.concat(rb).forEach(b=>{ b.disabled=true; b.classList.add("done"); }); finish(prev.correct,prev.userAnswer); }
+}
+
+function exOrder(box,it,prev){
+  box.appendChild(h("div",{class:"prompt"},inline(it.prompt||"Put the words in order.")));
+  const words = Array.isArray(it.words)&&it.words.length ? it.words.slice() : String(it.answer).replace(/[.!?]+$/,"").split(/\s+/);
+  let pool=shuffle(words.map((t,k)=>({t,k}))); if(pool.length>1 && pool.every((p,k)=>p.k===k)) pool.reverse();
+  const built=[]; const bz=h("div",{class:"tokens built"}); const pz=h("div",{class:"tokens"});
+  const btn=h("button",{class:"primary"},"Check"); const fbw=h("div");
+  box.appendChild(bz); box.appendChild(pz); box.appendChild(btn); box.appendChild(fbw);
+  let locked=false;
+  const draw=()=>{
+    bz.innerHTML=""; pz.innerHTML="";
+    built.forEach((w,idx)=>bz.appendChild(h("button",{class:"german",onclick:()=>{ if(locked) return; pool.push(built.splice(idx,1)[0]); draw(); }},esc(w.t))));
+    pool.forEach((w,idx)=>pz.appendChild(h("button",{class:"german",onclick:()=>{ if(locked) return; built.push(pool.splice(idx,1)[0]); draw(); }},esc(w.t))));
+    btn.disabled = locked || pool.length>0;
+  };
+  const finish=(ok,ua)=>{ locked=true; btn.disabled=true; fbw.innerHTML=""; fbw.appendChild(fbBox(ok,(ok?"":"Answer: <strong>"+esc(it.answer)+"</strong>. ")+explain(it))); };
+  btn.addEventListener("click",()=>{ const ua=built.map(w=>w.t).join(" "); const ok=norm(ua,true)===norm(it.answer,true); record(it,ok,ua,false); finish(ok,ua); });
+  if(prev){ pool=[]; String(prev.userAnswer).split(" ").forEach(t=>built.push({t})); locked=true; draw(); finish(prev.correct,prev.userAnswer); }
+  else draw();
+}
+
+function renderWriting(body,s,idx){
+  const isSpeak=s.type==="speaking";
+  body.appendChild(h("h2",null,isSpeak?"Sprechen":"Schreiben"));
+  body.appendChild(h("div",{class:"card"},md(s.prompt)));
+  const key="s"+idx; const prev=(P.dr.ratings||{})[key]||{};
+  const ta=h("textarea",{placeholder:isSpeak?"Optional: write what you said":"Write your answer here",autocapitalize:"sentences",spellcheck:"false"});
+  ta.value=prev.text||""; ta.addEventListener("input",()=>{ P.dr.ratings[key]=Object.assign({},P.dr.ratings[key]||{type:s.type},{type:s.type,text:ta.value}); persist(); });
+  body.appendChild(ta);
+  const model=h("div",{class:"card german"},md(s.modelAnswer||"(no model answer)")); model.style.display="none";
+  const rate=h("div",{class:"card"},"<p style='margin-top:0'><strong>How did it go?</strong></p>"); rate.style.display="none";
+  const row=h("div",{class:"row rate"}); const labels=["1 · struggled","2 · okay","3 · solid"];
+  labels.forEach((l,j)=>{ const b=h("button",{onclick:()=>{ P.dr.ratings[key]={type:s.type,value:j+1,text:ta.value}; persist(); row.querySelectorAll("button").forEach((x,q)=>x.classList.toggle("on",q===j)); }},l); if(prev.value===j+1) b.classList.add("on"); row.appendChild(b); });
+  rate.appendChild(row);
+  const showBtn=h("button",{class:"big",style:"margin-top:10px",onclick:()=>{ model.style.display="block"; rate.style.display="block"; showBtn.style.display="none"; }},"Show model answer");
+  body.appendChild(showBtn); body.appendChild(model); body.appendChild(rate);
+  if(prev.value){ showBtn.click(); }
+}
+
+function renderFinish(body){
+  const st=dayStats(P.week,P.d);
+  body.appendChild(h("h2",null,"Fertig für heute"));
+  body.appendChild(h("p",null,st.answered?"Score today: <strong>"+st.score+"%</strong> ("+st.answered+" exercises)":"No exercises answered today."));
+  body.appendChild(h("p",{class:"muted small"},"Then do today's Anki cards."));
+  const ta=h("textarea",{placeholder:"Notes for my tutor (optional)"}); ta.value=P.dr.notes||"";
+  ta.addEventListener("input",()=>{ P.dr.notes=ta.value; persist(); });
+  body.appendChild(h("h3",null,"Notes for my tutor")); body.appendChild(ta);
+}
+
+boot();
+</script>
+</body>
+</html>
