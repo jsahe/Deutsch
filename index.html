@@ -2405,6 +2405,7 @@ function offlineNote(app){ if(S.offline) app.appendChild(h("p",{class:"muted sma
 
 function renderToday(app){ renderTodayLesson(app); todayCardsBox(app); backupNag(app); }
 function todayCardsBox(app){
+  if(!cardsStarted()){ notStartedBox(app); return; }
   const q=queueState(); if(!q.cards.length) return; const k=q.counts; const n=k.newCount+k.learnCount+k.revCount;
   const c=h("div",{class:"card"},"<h2 style='margin-top:0'>Karten</h2><p class='muted'>"+k.newCount+" new · "+k.learnCount+" learning · "+k.revCount+" to review</p>");
   c.appendChild(h("button",{class:(n?"primary ":"")+"big",onclick:openStudy},n?"Study cards":"All done for today ✓"));
@@ -2825,7 +2826,9 @@ function studyDay(d){ const x=new Date(d===undefined?Date.now():d); x.setHours(x
 function dayKeyOf(d){ const x=studyDay(d); return x.getFullYear()+"-"+pad2(x.getMonth()+1)+"-"+pad2(x.getDate()); }
 function endOfStudyDay(){ const s=studyDay(); return new Date(s.getFullYear(),s.getMonth(),s.getDate()+1,DAY_START_HOUR); }
 
-const CFG_DEFAULT={ newPerDay:10, retention:0.9, autoplay:true, voice:"", rate:1 };
+const CFG_DEFAULT={ newPerDay:10, retention:0.9, autoplay:true, voice:"", rate:1, cardsStart:"2026-11-23" };
+function cardsStarted(){ const d=parseDate(getCfg().cardsStart); return !d || studyDay()>=d; }
+function notStartedBox(app){ const d=parseDate(getCfg().cardsStart); const c=h("div",{class:"card"},"<h2 style='margin-top:0'>Karten</h2><p>App flashcards start <strong>"+fmtDate(d)+"</strong>. Keep using Anki until then, so you don't review the same cards twice.</p>"); c.appendChild(h("button",{class:"big",onclick:()=>{ if(confirm("Start app flashcards today? Stop using Anki for these cards from now on.")){ setCfg({cardsStart:dayKeyOf()}); render(); } }},"Start now instead")); app.appendChild(c); }
 function getCfg(){ return Object.assign({},CFG_DEFAULT,store.get("cfg",{})||{}); }
 function setCfg(patch){ store.set("cfg",Object.assign(getCfg(),patch)); SCHED=null; }
 
@@ -2978,7 +2981,7 @@ function imgBox(c){
 
 /* ---------- study screen ---------- */
 const ST={ cur:null, shown:0, revealed:false, undo:null };
-function openStudy(){ ST.shown=0; ST.undo=null; $("study").classList.add("open"); document.body.style.overflow="hidden"; studyNext(); }
+function openStudy(){ if(!cardsStarted()) return; ST.shown=0; ST.undo=null; $("study").classList.add("open"); document.body.style.overflow="hidden"; studyNext(); }
 function closeStudy(){ try{ speechSynthesis.cancel(); }catch(e){} $("study").classList.remove("open"); document.body.style.overflow=""; render(); }
 function studyCounts(q){ $("sCount").innerHTML="<span class='c-new'>"+q.counts.newCount+"</span> · <span class='c-learn'>"+q.counts.learnCount+"</span> · <span class='c-rev'>"+q.counts.revCount+"</span>"; }
 function studyNext(){
@@ -3062,6 +3065,7 @@ function undoRating(){
 /* ---------- Cards tab ---------- */
 function renderCards(app){
   app.appendChild(h("h1",null,"Karten"));
+  if(!cardsStarted()){ notStartedBox(app); return; }
   const q=queueState();
   if(!q.cards.length){ app.appendChild(h("div",{class:"card"},"<p>No flashcards yet. They come with each week's lesson file.</p>")); return; }
   const k=q.counts;
