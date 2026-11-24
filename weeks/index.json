@@ -4,6 +4,11 @@
    "week": 0,
    "startDate": "2026-11-16",
    "file": "weeks/week-00.json"
+  },
+  {
+   "week": 1,
+   "startDate": "2026-11-23",
+   "file": "weeks/week-01.json"
   }
  ]
 }

@@ -1780,7 +1780,7 @@
   {
    "id": "w00-15",
    "day": 2,
-   "en": "Pardon? / Sorry, what? (didn't hear)",
+   "en": "Pardon? / Sorry? (you didn't catch what was said)",
    "de": "Wie bitte?",
    "example": "Wie bitte? Noch einmal, bitte.",
    "exampleEn": "Pardon? Again, please.",
@@ -1890,21 +1890,21 @@
   {
    "id": "w00-26",
    "day": 3,
-   "en": "I live in ...",
+   "en": "I live in … (reside somewhere; verb: wohnen)",
    "de": "Ich wohne in ...",
    "example": "Ich wohne in Indiana.",
    "exampleEn": "I live in Indiana.",
-   "notes": "w = [v]; h after o is silent and makes it long: [ˈvoːnə].",
+   "notes": "wohnen, not leben. w = [v]; silent h → long o: [ˈvoːnə].",
    "introduced": "2026-11-14"
   },
   {
    "id": "w00-27",
    "day": 3,
-   "en": "I don't understand.",
+   "en": "I don't understand. (nicht goes last)",
    "de": "Ich verstehe nicht.",
    "example": "Entschuldigung, ich verstehe nicht.",
    "exampleEn": "Sorry, I don't understand.",
-   "notes": "v = [f]; st at the start of the stem = [ʃt]: [fɛɐ̯ˈʃteːə].",
+   "notes": "nicht at the end, unlike Spanish 'no entiendo'. v = [f]: [fɛɐ̯ˈʃteːə].",
    "introduced": "2026-11-14"
   },
   {

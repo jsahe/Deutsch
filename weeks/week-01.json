@@ -1,0 +1,2621 @@
+{
+ "week": 1,
+ "startDate": "2026-11-23",
+ "level": "A1",
+ "theme": "Sich vorstellen",
+ "days": [
+  {
+   "day": 1,
+   "title": "sein + Personalpronomen",
+   "goals": [
+    "Say who you are with sein",
+    "Pick du, ihr or Sie"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "Pronouns and sein (to be)",
+     "explanation": "German has a pronoun for each person, like Spanish *yo, tú, él*. **sein** (to be) is irregular like *ser*, so learn it as a table. **Sie** with a capital S is the formal 'you' and uses the same verb form as **sie** (they). **ihr** is the plural of du, like *vosotros*. Jobs and roles take no article: *Ich bin Student*, not *ein Student*.\n\n| Singular | | Plural | |\n|---|---|---|---|\n| ich | **bin** | wir | **sind** |\n| du | **bist** | ihr | **seid** |\n| er / sie / es | **ist** | sie / Sie | **sind** |",
+     "examples": [
+      "Ich bin Student.",
+      "Bist du Ingenieur?",
+      "Sind Sie Frau Weber?"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Neue Wörter (10)",
+     "words": [
+      {
+       "de": "sein",
+       "en": "to be",
+       "example": "Ich bin Jose."
+      },
+      {
+       "de": "du bist",
+       "en": "you are (du)",
+       "example": "Du bist Student."
+      },
+      {
+       "de": "er ist / sie ist",
+       "en": "he is / she is",
+       "example": "Sie ist Studentin."
+      },
+      {
+       "de": "wir sind",
+       "en": "we are",
+       "example": "Wir sind Freunde."
+      },
+      {
+       "de": "ihr seid",
+       "en": "you are (ihr = you all, informal)",
+       "example": "Ihr seid Studenten."
+      },
+      {
+       "de": "Sie sind / sie sind",
+       "en": "you are (Sie, formal) / they are",
+       "example": "Sind Sie Herr Müller?"
+      },
+      {
+       "de": "der Student",
+       "en": "the student (male)",
+       "example": "Ich bin Student.",
+       "plural": "die Studenten",
+       "gender": "der"
+      },
+      {
+       "de": "die Studentin",
+       "en": "the student (female)",
+       "example": "Anna ist Studentin.",
+       "plural": "die Studentinnen",
+       "gender": "die"
+      },
+      {
+       "de": "der Ingenieur",
+       "en": "the engineer (male)",
+       "example": "Ich bin Ingenieur.",
+       "plural": "die Ingenieure",
+       "gender": "der"
+      },
+      {
+       "de": "Was sind Sie von Beruf?",
+       "en": "What do you do for a living? (Sie)",
+       "example": "Was sind Sie von Beruf? – Ich bin Ingenieur."
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Auf einer Party",
+     "text": "– Hallo! Ich bin Jose. Und du?\n– Ich bin Anna. Bist du Student?\n– Ja, ich bin Student. Und du?\n– Ich bin Studentin. Das ist Paul. Er ist Ingenieur.\n– Hallo, Paul! Freut mich.\n– Freut mich! Anna und ich, wir sind Freunde.\n\n– Guten Tag! Ich heiße Weber. Was sind Sie von Beruf?\n– Ich bin Student. Und Sie?\n– Ich bin Ingenieurin.",
+     "translation": "– Hi! I'm Jose. And you?\n– I'm Anna. Are you a student?\n– Yes, I'm a student. And you?\n– I'm a student. This is Paul. He's an engineer.\n– Hi, Paul! Nice to meet you.\n– Nice to meet you! Anna and I, we're friends.\n\n– Hello! My name is Weber. What do you do for a living?\n– I'm a student. And you?\n– I'm an engineer."
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w01d1-1",
+       "kind": "fill_blank",
+       "topic": "sein",
+       "prompt": "Ich ___ Jose.",
+       "answers": [
+        [
+         "bin"
+        ]
+       ]
+      },
+      {
+       "id": "w01d1-2",
+       "kind": "fill_blank",
+       "topic": "sein",
+       "prompt": "Du ___ Student.",
+       "answers": [
+        [
+         "bist"
+        ]
+       ]
+      },
+      {
+       "id": "w01d1-3",
+       "kind": "fill_blank",
+       "topic": "sein",
+       "prompt": "Anna ___ Studentin.",
+       "answers": [
+        [
+         "ist"
+        ]
+       ]
+      },
+      {
+       "id": "w01d1-4",
+       "kind": "fill_blank",
+       "topic": "sein",
+       "prompt": "Wir ___ Freunde.",
+       "answers": [
+        [
+         "sind"
+        ]
+       ],
+       "words": [
+        "der Freund"
+       ]
+      },
+      {
+       "id": "w01d1-5",
+       "kind": "fill_blank",
+       "topic": "sein",
+       "prompt": "Ihr ___ Studenten.",
+       "answers": [
+        [
+         "seid"
+        ]
+       ],
+       "explanation": "ihr → seid (vosotros sois)."
+      },
+      {
+       "id": "w01d1-6",
+       "kind": "multiple_choice",
+       "topic": "Register",
+       "prompt": "You meet a professor. Ask: 'Are you Ms. Weber?'",
+       "options": [
+        "Bist du Frau Weber?",
+        "Sind Sie Frau Weber?",
+        "Sind sie Frau Weber?"
+       ],
+       "answer": 1,
+       "explanation": "Formal Sie, capital S. Lowercase sie = they."
+      },
+      {
+       "id": "w01d1-7",
+       "kind": "multiple_choice",
+       "topic": "Beruf",
+       "prompt": "'I'm a student.'",
+       "options": [
+        "Ich bin ein Student.",
+        "Ich bin Student."
+       ],
+       "answer": 1,
+       "explanation": "No article with jobs and roles."
+      },
+      {
+       "id": "w01d1-8",
+       "kind": "multiple_choice",
+       "topic": "Pronomen",
+       "prompt": "Paul und Anna → ___ sind Freunde.",
+       "options": [
+        "er",
+        "ihr",
+        "sie",
+        "wir"
+       ],
+       "answer": 2,
+       "explanation": "Two other people = sie (they)."
+      },
+      {
+       "id": "w01d1-9",
+       "kind": "match",
+       "topic": "Pronomen",
+       "prompt": "Match the German to the English.",
+       "pairs": [
+        [
+         "ich",
+         "I"
+        ],
+        [
+         "du",
+         "you (informal)"
+        ],
+        [
+         "wir",
+         "we"
+        ],
+        [
+         "ihr",
+         "you all (informal)"
+        ],
+        [
+         "Sie",
+         "you (formal)"
+        ]
+       ]
+      },
+      {
+       "id": "w01d1-10",
+       "kind": "translate",
+       "topic": "Beruf",
+       "direction": "en-de",
+       "prompt": "I'm an engineer.",
+       "acceptable": [
+        "ich bin ingenieur",
+        "ich bin ingenieurin"
+       ],
+       "modelAnswer": "Ich bin Ingenieur.",
+       "words": [
+        "der Ingenieur"
+       ]
+      },
+      {
+       "id": "w01d1-11",
+       "kind": "translate",
+       "topic": "Register",
+       "direction": "en-de",
+       "prompt": "What do you do for a living? (formal)",
+       "acceptable": [
+        "was sind sie von beruf"
+       ],
+       "modelAnswer": "Was sind Sie von Beruf?"
+      },
+      {
+       "id": "w01d1-12",
+       "kind": "fill_blank",
+       "topic": "Großschreibung",
+       "prompt": "Ich bin ___. (student, male)",
+       "answers": [
+        [
+         "Student"
+        ]
+       ],
+       "strictCase": true,
+       "explanation": "Nouns are capitalized, even after sein.",
+       "words": [
+        "der Student"
+       ]
+      },
+      {
+       "id": "w01d1-13",
+       "kind": "multiple_choice",
+       "topic": "Register",
+       "prompt": "Formal: 'How are you?'",
+       "options": [
+        "Wie geht's?",
+        "Wie geht es Ihnen?"
+       ],
+       "answer": 1,
+       "explanation": "Ihnen = formal you. Wie geht's? is casual.",
+       "words": [
+        "Wie geht es Ihnen?"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "speaking",
+     "prompt": "Say the sein table aloud twice (ich bin … sie/Sie sind). Then say: Ich bin Jose. Ich bin Student. Wir sind Freunde.",
+     "modelAnswer": "ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. Ich bin Jose. Ich bin Student. Wir sind Freunde."
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "title": "Präsens: regelmäßige Verben",
+   "goals": [
+    "Conjugate regular verbs",
+    "Fix ich -e / du -st / Sie -en"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "Present tense endings",
+     "explanation": "Cut **-en** off the infinitive to get the stem (*wohn-en* → *wohn-*), then add the ending for the person, like *habl-o, habl-as, habl-a*. **wir**, **sie** (they) and **Sie** always look like the infinitive. Stems ending in -t add an **e** (*du arbeitest*); stems ending in -ß add only **-t** for du (*du heißt*). Your Week 0 misses (*ich heißt*, *Sie heiße*, *ich sprechen*) all come from this table.\n\n| | ending | wohnen | arbeiten | heißen |\n|---|---|---|---|---|\n| ich | -e | wohne | arbeite | heiße |\n| du | -st | wohnst | arbeitest | heißt |\n| er/sie/es | -t | wohnt | arbeitet | heißt |\n| wir | -en | wohnen | arbeiten | heißen |\n| ihr | -t | wohnt | arbeitet | heißt |\n| sie/Sie | -en | wohnen | arbeiten | heißen |",
+     "examples": [
+      "Ich wohne in Indiana.",
+      "Du arbeitest in Berlin.",
+      "Wie heißen Sie?"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Neue Wörter (10)",
+     "words": [
+      {
+       "de": "kommen",
+       "en": "to come",
+       "example": "Wir kommen aus Mexiko."
+      },
+      {
+       "de": "wohnen",
+       "en": "to live (reside somewhere)",
+       "example": "Wir wohnen in Indiana."
+      },
+      {
+       "de": "lernen",
+       "en": "to learn",
+       "example": "Ich lerne Deutsch."
+      },
+      {
+       "de": "machen",
+       "en": "to do / to make",
+       "example": "Was machst du?"
+      },
+      {
+       "de": "hören",
+       "en": "to hear / to listen to",
+       "example": "Wir hören Musik."
+      },
+      {
+       "de": "trinken",
+       "en": "to drink",
+       "example": "Er trinkt Kaffee."
+      },
+      {
+       "de": "studieren",
+       "en": "to study (at university)",
+       "example": "Anna studiert Musik."
+      },
+      {
+       "de": "arbeiten",
+       "en": "to work",
+       "example": "Er arbeitet in Berlin."
+      },
+      {
+       "de": "heißen",
+       "en": "to be called (name)",
+       "example": "Er heißt Paul."
+      },
+      {
+       "de": "spielen",
+       "en": "to play",
+       "example": "Das Kind spielt."
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Paul, Anna und Jose",
+     "text": "Das ist Paul. Er kommt aus Hamburg und wohnt in Berlin. Er arbeitet in Berlin, er ist Ingenieur. Anna kommt aus Wien. Sie studiert Musik. Paul und Anna lernen Englisch. Und ich? Ich heiße Jose, ich komme aus Mexiko und ich lerne Deutsch. Ich trinke Kaffee und höre Musik.",
+     "translation": "This is Paul. He's from Hamburg and lives in Berlin. He works in Berlin; he's an engineer. Anna is from Vienna. She studies music. Paul and Anna are learning English. And me? My name is Jose, I'm from Mexico and I'm learning German. I drink coffee and listen to music."
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w01d2-1",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Ich ___ in Indiana. (wohnen)",
+       "answers": [
+        [
+         "wohne"
+        ]
+       ],
+       "explanation": "ich → -e.",
+       "words": [
+        "Ich wohne in ..."
+       ]
+      },
+      {
+       "id": "w01d2-2",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Du ___ aus Mexiko. (kommen)",
+       "answers": [
+        [
+         "kommst"
+        ]
+       ],
+       "explanation": "du → -st."
+      },
+      {
+       "id": "w01d2-3",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Er ___ in Berlin. (arbeiten)",
+       "answers": [
+        [
+         "arbeitet"
+        ]
+       ],
+       "explanation": "Stem ends in -t → arbeit-e-t."
+      },
+      {
+       "id": "w01d2-4",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Wie ___ du? (heißen)",
+       "answers": [
+        [
+         "heißt"
+        ]
+       ],
+       "explanation": "heiß- + st → heißt (no double s)."
+      },
+      {
+       "id": "w01d2-5",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Wie ___ Sie? (heißen)",
+       "answers": [
+        [
+         "heißen"
+        ]
+       ],
+       "explanation": "Sie → -en, same as the infinitive."
+      },
+      {
+       "id": "w01d2-6",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Wir ___ Deutsch. (lernen)",
+       "answers": [
+        [
+         "lernen"
+        ]
+       ]
+      },
+      {
+       "id": "w01d2-7",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Ihr ___ Kaffee. (trinken)",
+       "answers": [
+        [
+         "trinkt"
+        ]
+       ],
+       "explanation": "ihr → -t.",
+       "words": [
+        "der Kaffee"
+       ]
+      },
+      {
+       "id": "w01d2-8",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Anna ___ Musik. (studieren)",
+       "answers": [
+        [
+         "studiert"
+        ]
+       ],
+       "explanation": "sie (she) → -t.",
+       "words": [
+        "die Musik"
+       ]
+      },
+      {
+       "id": "w01d2-9",
+       "kind": "multiple_choice",
+       "topic": "Verbendungen",
+       "prompt": "Ich ___ ein bisschen Deutsch.",
+       "options": [
+        "sprechen",
+        "spreche",
+        "sprichst"
+       ],
+       "answer": 1,
+       "explanation": "ich → -e.",
+       "words": [
+        "Ich spreche ein bisschen Deutsch."
+       ]
+      },
+      {
+       "id": "w01d2-10",
+       "kind": "match",
+       "topic": "Vokabeln",
+       "prompt": "Match the German to the English.",
+       "pairs": [
+        [
+         "kommen",
+         "to come"
+        ],
+        [
+         "wohnen",
+         "to live"
+        ],
+        [
+         "lernen",
+         "to learn"
+        ],
+        [
+         "trinken",
+         "to drink"
+        ],
+        [
+         "spielen",
+         "to play"
+        ],
+        [
+         "hören",
+         "to listen"
+        ]
+       ]
+      },
+      {
+       "id": "w01d2-11",
+       "kind": "translate",
+       "topic": "Verbendungen",
+       "direction": "en-de",
+       "prompt": "We live in Indiana.",
+       "acceptable": [
+        "wir wohnen in indiana"
+       ],
+       "modelAnswer": "Wir wohnen in Indiana."
+      },
+      {
+       "id": "w01d2-12",
+       "kind": "translate",
+       "topic": "Register",
+       "direction": "en-de",
+       "prompt": "What's your name? (formal)",
+       "acceptable": [
+        "wie heißen sie",
+        "wie ist ihr name"
+       ],
+       "modelAnswer": "Wie heißen Sie?"
+      },
+      {
+       "id": "w01d2-13",
+       "kind": "order",
+       "topic": "Verbendungen",
+       "prompt": "Build: The child is playing.",
+       "answer": "Das Kind spielt."
+      }
+     ]
+    },
+    {
+     "type": "speaking",
+     "prompt": "Conjugate wohnen, arbeiten and heißen aloud for all six persons. Then say three true sentences with ich.",
+     "modelAnswer": "ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie wohnen … Ich wohne in Indiana. Ich lerne Deutsch. Ich trinke Kaffee."
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "title": "Wortstellung: Verb an Position 2",
+   "goals": [
+    "Put the verb second",
+    "Place nicht"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "V2: the verb is always second",
+     "explanation": "In a German statement the conjugated verb is always the **second element**. If something other than the subject comes first (*heute, jetzt, hier*), the subject moves to right after the verb. This is the opposite of Japanese, where the verb goes last. **und, aber, oder** don't count as a position. **nicht** usually goes near the end: *Ich verstehe das nicht.*\n\n| 1 | 2 (verb) | rest |\n|---|---|---|\n| Ich | **lerne** | heute Deutsch. |\n| Heute | **lerne** | ich Deutsch. |\n| Jetzt | **wohne** | ich in Indiana. |\n| Ich | **verstehe** | das nicht. |",
+     "examples": [
+      "Heute arbeitet Paul nicht.",
+      "Jetzt wohne ich hier.",
+      "Ich trinke Kaffee, aber Anna trinkt Wasser."
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Neue Wörter (10)",
+     "words": [
+      {
+       "de": "heute",
+       "en": "today",
+       "example": "Heute lerne ich Deutsch."
+      },
+      {
+       "de": "jetzt",
+       "en": "now",
+       "example": "Jetzt wohne ich in Indiana."
+      },
+      {
+       "de": "hier",
+       "en": "here",
+       "example": "Ich wohne hier."
+      },
+      {
+       "de": "auch",
+       "en": "also / too",
+       "example": "Ich bin auch Student."
+      },
+      {
+       "de": "sehr",
+       "en": "very",
+       "example": "Das Brot ist sehr gut."
+      },
+      {
+       "de": "gern",
+       "en": "gladly; verb + gern = to like doing",
+       "example": "Ich höre gern Musik."
+      },
+      {
+       "de": "und",
+       "en": "and",
+       "example": "Paul und Anna sind Freunde."
+      },
+      {
+       "de": "aber",
+       "en": "but",
+       "example": "Ich spreche Englisch, aber nicht gut."
+      },
+      {
+       "de": "oder",
+       "en": "or",
+       "example": "Kaffee oder Wasser?"
+      },
+      {
+       "de": "nicht",
+       "en": "not",
+       "example": "Ich verstehe das nicht."
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Heute",
+     "text": "Jose wohnt jetzt in Indiana. Er studiert hier. Heute lernt er Deutsch. Er lernt gern Deutsch! Anna wohnt auch hier. Sie kommt aus Wien. Anna trinkt gern Kaffee, aber Jose trinkt gern Wasser. Kaffee oder Wasser? Heute trinken sie Bier!",
+     "translation": "Jose lives in Indiana now. He studies here. Today he's learning German. He likes learning German! Anna lives here too. She's from Vienna. Anna likes coffee, but Jose likes water. Coffee or water? Today they're drinking beer!"
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w01d3-1",
+       "kind": "order",
+       "topic": "Wortstellung (V2)",
+       "prompt": "Build: Today I'm learning German.",
+       "answer": "Heute lerne ich Deutsch."
+      },
+      {
+       "id": "w01d3-2",
+       "kind": "order",
+       "topic": "Wortstellung (V2)",
+       "prompt": "Build: Now I live in Indiana.",
+       "answer": "Jetzt wohne ich in Indiana."
+      },
+      {
+       "id": "w01d3-3",
+       "kind": "order",
+       "topic": "Wortstellung (V2)",
+       "prompt": "Build: I don't understand that.",
+       "answer": "Ich verstehe das nicht.",
+       "explanation": "nicht goes at the end."
+      },
+      {
+       "id": "w01d3-4",
+       "kind": "multiple_choice",
+       "topic": "Wortstellung (V2)",
+       "prompt": "Which is correct?",
+       "options": [
+        "Heute ich lerne Deutsch.",
+        "Heute lerne ich Deutsch.",
+        "Heute Deutsch lerne ich."
+       ],
+       "answer": 1,
+       "explanation": "heute takes position 1, so the verb comes next."
+      },
+      {
+       "id": "w01d3-5",
+       "kind": "multiple_choice",
+       "topic": "Wortstellung (V2)",
+       "prompt": "'Paul isn't working today.'",
+       "options": [
+        "Paul nicht arbeitet heute.",
+        "Paul arbeitet heute nicht.",
+        "Nicht Paul arbeitet heute."
+       ],
+       "answer": 1,
+       "explanation": "Verb second, nicht near the end."
+      },
+      {
+       "id": "w01d3-6",
+       "kind": "fill_blank",
+       "topic": "Vokabeln",
+       "prompt": "Ich höre ___ Musik. (like to)",
+       "answers": [
+        [
+         "gern"
+        ]
+       ],
+       "explanation": "verb + gern = like doing.",
+       "words": [
+        "gern",
+        "die Musik"
+       ]
+      },
+      {
+       "id": "w01d3-7",
+       "kind": "fill_blank",
+       "topic": "Vokabeln",
+       "prompt": "Kaffee ___ Wasser? (or)",
+       "answers": [
+        [
+         "oder"
+        ]
+       ]
+      },
+      {
+       "id": "w01d3-8",
+       "kind": "fill_blank",
+       "topic": "Vokabeln",
+       "prompt": "Ich bin ___ Student. (too)",
+       "answers": [
+        [
+         "auch"
+        ]
+       ]
+      },
+      {
+       "id": "w01d3-9",
+       "kind": "translate",
+       "topic": "Höflichkeit",
+       "direction": "en-de",
+       "prompt": "I don't understand.",
+       "acceptable": [
+        "ich verstehe nicht",
+        "ich verstehe das nicht",
+        "ich verstehe es nicht"
+       ],
+       "modelAnswer": "Ich verstehe nicht.",
+       "words": [
+        "Ich verstehe nicht."
+       ],
+       "explanation": "nicht comes after the verb, at the end."
+      },
+      {
+       "id": "w01d3-10",
+       "kind": "translate",
+       "topic": "Höflichkeit",
+       "direction": "en-de",
+       "prompt": "More slowly, please.",
+       "acceptable": [
+        "langsamer bitte",
+        "langsamer, bitte",
+        "bitte langsamer"
+       ],
+       "modelAnswer": "Langsamer, bitte.",
+       "words": [
+        "Langsamer, bitte."
+       ]
+      },
+      {
+       "id": "w01d3-11",
+       "kind": "translate",
+       "topic": "Wortstellung (V2)",
+       "direction": "en-de",
+       "prompt": "I like listening to music.",
+       "acceptable": [
+        "ich höre gern musik",
+        "musik höre ich gern"
+       ],
+       "modelAnswer": "Ich höre gern Musik.",
+       "words": [
+        "die Musik",
+        "gern"
+       ]
+      },
+      {
+       "id": "w01d3-12",
+       "kind": "fill_blank",
+       "topic": "Großschreibung",
+       "prompt": "Heute lerne ich ___. (German)",
+       "answers": [
+        [
+         "Deutsch"
+        ]
+       ],
+       "strictCase": true,
+       "explanation": "Language names are capitalized.",
+       "words": [
+        "Ich spreche ein bisschen Deutsch."
+       ]
+      },
+      {
+       "id": "w01d3-13",
+       "kind": "match",
+       "topic": "Vokabeln",
+       "prompt": "Match the German to the English.",
+       "pairs": [
+        [
+         "heute",
+         "today"
+        ],
+        [
+         "jetzt",
+         "now"
+        ],
+        [
+         "hier",
+         "here"
+        ],
+        [
+         "aber",
+         "but"
+        ],
+        [
+         "sehr",
+         "very"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "writing",
+     "prompt": "Write 3 sentences that start with heute, jetzt or hier. Keep the verb in position 2.",
+     "modelAnswer": "Heute lerne ich Deutsch. Jetzt trinke ich Kaffee. Hier wohne ich."
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "title": "W-Fragen",
+   "goals": [
+    "Ask wer, was, wo, woher, wie",
+    "Ask and say ages"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "W-questions",
+     "explanation": "W-questions also keep the verb in position 2: question word, verb, subject. *Wo wohnst du?* has the same order as *¿Dónde vives?* Careful: **wer** = who, **wo** = where. **wie** means 'how', but also 'what' in *Wie heißt du?* and *Wie alt bist du?*\n\n| Word | Meaning | Example |\n|---|---|---|\n| wer | who | Wer ist das? |\n| was | what | Was machst du? |\n| wo | where | Wo wohnst du? |\n| woher | where from | Woher kommen Sie? |\n| wie | how | Wie alt bist du? |",
+     "examples": [
+      "Wer ist das? – Das ist Anna.",
+      "Wo arbeiten Sie?",
+      "Wie alt ist das Kind? – Es ist elf."
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Neue Wörter (10)",
+     "words": [
+      {
+       "de": "wer",
+       "en": "who",
+       "example": "Wer ist das?"
+      },
+      {
+       "de": "was",
+       "en": "what",
+       "example": "Was trinkst du?"
+      },
+      {
+       "de": "wo",
+       "en": "where",
+       "example": "Wo ist das Buch?"
+      },
+      {
+       "de": "woher",
+       "en": "where from",
+       "example": "Woher kommt Anna?"
+      },
+      {
+       "de": "wie",
+       "en": "how",
+       "example": "Wie heißt das Lied?"
+      },
+      {
+       "de": "Wie alt bist du?",
+       "en": "How old are you? (du)",
+       "example": "Wie alt bist du? – Ich bin zwanzig."
+      },
+      {
+       "de": "Ich bin … Jahre alt.",
+       "en": "I'm … years old.",
+       "example": "Das Mädchen ist elf Jahre alt."
+      },
+      {
+       "de": "das Jahr",
+       "en": "the year",
+       "example": "Das Kind ist ein Jahr alt.",
+       "plural": "die Jahre",
+       "gender": "das"
+      },
+      {
+       "de": "Wo wohnst du?",
+       "en": "Where do you live? (du)",
+       "example": "Wo wohnst du? – Ich wohne in Indiana."
+      },
+      {
+       "de": "Was machst du?",
+       "en": "What do you do? (job or right now; du)",
+       "example": "Was machst du? – Ich lerne Deutsch."
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Wer ist das?",
+     "text": "– Wer ist das?\n– Das ist Paul. Er ist Ingenieur.\n– Woher kommt er?\n– Aus Hamburg. Aber jetzt wohnt er in Berlin.\n– Und du? Wo wohnst du?\n– Ich wohne hier in Indiana.\n– Was machst du?\n– Ich studiere. Und ich lerne Deutsch!\n– Wie alt bist du?\n– Ich bin zwanzig. Und du?\n– Auch zwanzig.",
+     "translation": "– Who's that?\n– That's Paul. He's an engineer.\n– Where's he from?\n– From Hamburg. But now he lives in Berlin.\n– And you? Where do you live?\n– I live here in Indiana.\n– What do you do?\n– I'm a student. And I'm learning German!\n– How old are you?\n– I'm twenty. And you?\n– Twenty too."
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w01d4-1",
+       "kind": "multiple_choice",
+       "topic": "W-Fragen",
+       "prompt": "___ wohnst du? – In Indiana.",
+       "options": [
+        "Wer",
+        "Wo",
+        "Was",
+        "Woher"
+       ],
+       "answer": 1
+      },
+      {
+       "id": "w01d4-2",
+       "kind": "multiple_choice",
+       "topic": "W-Fragen",
+       "prompt": "___ kommst du? – Aus Mexiko.",
+       "options": [
+        "Wer",
+        "Wo",
+        "Was",
+        "Woher"
+       ],
+       "answer": 3,
+       "explanation": "kommen aus → woher.",
+       "words": [
+        "Woher kommst du?"
+       ]
+      },
+      {
+       "id": "w01d4-3",
+       "kind": "multiple_choice",
+       "topic": "W-Fragen",
+       "prompt": "___ ist das? – Das ist Anna.",
+       "options": [
+        "Wer",
+        "Wo",
+        "Was",
+        "Wie"
+       ],
+       "answer": 0,
+       "explanation": "wer = who (not where)."
+      },
+      {
+       "id": "w01d4-4",
+       "kind": "multiple_choice",
+       "topic": "W-Fragen",
+       "prompt": "___ machst du? – Ich lerne.",
+       "options": [
+        "Wer",
+        "Wo",
+        "Was",
+        "Woher"
+       ],
+       "answer": 2
+      },
+      {
+       "id": "w01d4-5",
+       "kind": "fill_blank",
+       "topic": "sein",
+       "prompt": "Wie alt ___ du?",
+       "answers": [
+        [
+         "bist"
+        ]
+       ]
+      },
+      {
+       "id": "w01d4-6",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Wo ___ Sie? (wohnen)",
+       "answers": [
+        [
+         "wohnen"
+        ]
+       ],
+       "explanation": "Sie → -en."
+      },
+      {
+       "id": "w01d4-7",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Was ___ du? (machen)",
+       "answers": [
+        [
+         "machst"
+        ]
+       ]
+      },
+      {
+       "id": "w01d4-8",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Wie ___ das Lied? (heißen)",
+       "answers": [
+        [
+         "heißt"
+        ]
+       ],
+       "explanation": "das Lied = es → -t.",
+       "words": [
+        "das Lied"
+       ]
+      },
+      {
+       "id": "w01d4-9",
+       "kind": "order",
+       "topic": "W-Fragen",
+       "prompt": "Build: Where do you live? (du)",
+       "answer": "Wo wohnst du?"
+      },
+      {
+       "id": "w01d4-10",
+       "kind": "order",
+       "topic": "W-Fragen",
+       "prompt": "Build: Where are you from? (formal)",
+       "answer": "Woher kommen Sie?"
+      },
+      {
+       "id": "w01d4-11",
+       "kind": "translate",
+       "topic": "W-Fragen",
+       "direction": "en-de",
+       "prompt": "How old are you? (du)",
+       "acceptable": [
+        "wie alt bist du"
+       ],
+       "modelAnswer": "Wie alt bist du?"
+      },
+      {
+       "id": "w01d4-12",
+       "kind": "translate",
+       "topic": "Zahlen",
+       "direction": "en-de",
+       "prompt": "The girl is eleven years old.",
+       "acceptable": [
+        "das mädchen ist elf jahre alt",
+        "das mädchen ist elf"
+       ],
+       "modelAnswer": "Das Mädchen ist elf Jahre alt.",
+       "words": [
+        "das Mädchen",
+        "elf"
+       ]
+      },
+      {
+       "id": "w01d4-13",
+       "kind": "match",
+       "topic": "W-Fragen",
+       "prompt": "Match the German to the English.",
+       "pairs": [
+        [
+         "wer",
+         "who"
+        ],
+        [
+         "was",
+         "what"
+        ],
+        [
+         "wo",
+         "where"
+        ],
+        [
+         "woher",
+         "where from"
+        ],
+        [
+         "wie",
+         "how"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "speaking",
+     "prompt": "Ask your speaking partner five W-questions with du (Wie heißt du? Woher kommst du? Wo wohnst du? Was machst du? Wie alt bist du?) and answer theirs.",
+     "modelAnswer": "Wie heißt du? – Ich heiße Jose. Woher kommst du? – Aus Mexiko. Wo wohnst du? – In Indiana. Was machst du? – Ich studiere. Wie alt bist du? – Ich bin …"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "title": "Länder und Sprachen",
+   "goals": [
+    "Say where you're from",
+    "Say which languages you speak"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "aus + country, sprechen, languages",
+     "explanation": "**Ich komme aus** + country: most countries take no article (*aus Deutschland, aus Mexiko*). A few have one, and it changes after *aus*: *die Schweiz → aus der Schweiz*, *die USA → aus den USA*. Learn those as chunks. Language names are capitalized: *Ich spreche Deutsch.* **sprechen** changes its vowel with du and er/sie/es (*du sprichst, er spricht*); Week 4 covers these verbs.\n\n| Singular | | Plural | |\n|---|---|---|---|\n| ich | spreche | wir | sprechen |\n| du | **sprichst** | ihr | sprecht |\n| er/sie/es | **spricht** | sie/Sie | sprechen |",
+     "examples": [
+      "Ich komme aus Mexiko und spreche Spanisch.",
+      "Anna kommt aus Österreich.",
+      "Sprichst du Japanisch?"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Neue Wörter (10)",
+     "words": [
+      {
+       "de": "sprechen",
+       "en": "to speak",
+       "example": "Wir sprechen Deutsch."
+      },
+      {
+       "de": "Deutschland",
+       "en": "Germany",
+       "example": "Paul kommt aus Deutschland."
+      },
+      {
+       "de": "Österreich",
+       "en": "Austria",
+       "example": "Anna kommt aus Österreich."
+      },
+      {
+       "de": "die Schweiz",
+       "en": "Switzerland",
+       "example": "Lea kommt aus der Schweiz.",
+       "gender": "die"
+      },
+      {
+       "de": "die USA",
+       "en": "the USA",
+       "example": "Wir wohnen in den USA."
+      },
+      {
+       "de": "Japan",
+       "en": "Japan",
+       "example": "Tokio ist in Japan."
+      },
+      {
+       "de": "Spanisch",
+       "en": "Spanish (language)",
+       "example": "Ich spreche Spanisch."
+      },
+      {
+       "de": "Englisch",
+       "en": "English (language)",
+       "example": "Paul spricht gut Englisch."
+      },
+      {
+       "de": "Japanisch",
+       "en": "Japanese (language)",
+       "example": "Sprichst du Japanisch?"
+      },
+      {
+       "de": "Deutsch",
+       "en": "German (language)",
+       "example": "Wir lernen Deutsch."
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Wer spricht was?",
+     "text": "Ich heiße Jose. Ich komme aus Mexiko. Jetzt wohne ich in den USA, in Indiana. Ich spreche Spanisch und Englisch. Ich spreche auch ein bisschen Japanisch. Und jetzt lerne ich Deutsch!\n\nPaul kommt aus Deutschland. Er spricht Deutsch und Englisch. Anna kommt aus Österreich. Lea kommt aus der Schweiz. Sie spricht Deutsch und Französisch.",
+     "translation": "My name is Jose. I'm from Mexico. Now I live in the USA, in Indiana. I speak Spanish and English. I also speak a little Japanese. And now I'm learning German!\n\nPaul is from Germany. He speaks German and English. Anna is from Austria. Lea is from Switzerland. She speaks German and French."
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w01d5-1",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Du ___ Spanisch. (sprechen)",
+       "answers": [
+        [
+         "sprichst"
+        ]
+       ],
+       "explanation": "du: e → i, then -st."
+      },
+      {
+       "id": "w01d5-2",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Paul ___ Englisch. (sprechen)",
+       "answers": [
+        [
+         "spricht"
+        ]
+       ],
+       "explanation": "er: e → i, then -t."
+      },
+      {
+       "id": "w01d5-3",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Ich ___ ein bisschen Deutsch. (sprechen)",
+       "answers": [
+        [
+         "spreche"
+        ]
+       ],
+       "explanation": "ich: no vowel change, -e.",
+       "words": [
+        "Ich spreche ein bisschen Deutsch."
+       ]
+      },
+      {
+       "id": "w01d5-4",
+       "kind": "fill_blank",
+       "topic": "Großschreibung",
+       "prompt": "Ich spreche ___. (Spanish)",
+       "answers": [
+        [
+         "Spanisch"
+        ]
+       ],
+       "strictCase": true,
+       "explanation": "Languages are capitalized."
+      },
+      {
+       "id": "w01d5-5",
+       "kind": "fill_blank",
+       "topic": "Großschreibung",
+       "prompt": "Paul kommt aus ___. (Germany)",
+       "answers": [
+        [
+         "Deutschland"
+        ]
+       ],
+       "strictCase": true
+      },
+      {
+       "id": "w01d5-6",
+       "kind": "multiple_choice",
+       "topic": "Länder",
+       "prompt": "'I'm from Switzerland.'",
+       "options": [
+        "Ich komme aus Schweiz.",
+        "Ich komme aus der Schweiz.",
+        "Ich komme aus die Schweiz."
+       ],
+       "answer": 1,
+       "explanation": "die Schweiz → aus der Schweiz (learn it as a chunk)."
+      },
+      {
+       "id": "w01d5-7",
+       "kind": "multiple_choice",
+       "topic": "Länder",
+       "prompt": "'We live in the USA.'",
+       "options": [
+        "Wir wohnen in USA.",
+        "Wir wohnen in den USA.",
+        "Wir wohnen in die USA."
+       ],
+       "answer": 1,
+       "explanation": "die USA is plural → in den USA."
+      },
+      {
+       "id": "w01d5-8",
+       "kind": "multiple_choice",
+       "topic": "Diphthonge",
+       "prompt": "How is **Deutsch** pronounced?",
+       "options": [
+        "[daʊ̯tʃ]",
+        "[dɔʏ̯tʃ]",
+        "[deːʊtʃ]"
+       ],
+       "answer": 1,
+       "explanation": "eu = [ɔʏ̯], tsch = [tʃ]."
+      },
+      {
+       "id": "w01d5-9",
+       "kind": "translate",
+       "topic": "Register",
+       "direction": "en-de",
+       "prompt": "Do you speak English? (formal)",
+       "acceptable": [
+        "sprechen sie englisch"
+       ],
+       "modelAnswer": "Sprechen Sie Englisch?",
+       "words": [
+        "Sprechen Sie Englisch?"
+       ]
+      },
+      {
+       "id": "w01d5-10",
+       "kind": "translate",
+       "topic": "Vorstellung",
+       "direction": "en-de",
+       "prompt": "I speak Spanish, English and a little German.",
+       "acceptable": [
+        "ich spreche spanisch, englisch und ein bisschen deutsch",
+        "ich spreche spanisch englisch und ein bisschen deutsch",
+        "ich spreche spanisch, englisch und ein wenig deutsch",
+        "ich spreche spanisch, englisch und etwas deutsch"
+       ],
+       "modelAnswer": "Ich spreche Spanisch, Englisch und ein bisschen Deutsch."
+      },
+      {
+       "id": "w01d5-11",
+       "kind": "match",
+       "topic": "Länder",
+       "prompt": "Match the German to the English.",
+       "pairs": [
+        [
+         "Deutschland",
+         "Germany"
+        ],
+        [
+         "Österreich",
+         "Austria"
+        ],
+        [
+         "die Schweiz",
+         "Switzerland"
+        ],
+        [
+         "die USA",
+         "the USA"
+        ]
+       ]
+      },
+      {
+       "id": "w01d5-12",
+       "kind": "order",
+       "topic": "Länder",
+       "prompt": "Build: Anna is from Austria.",
+       "answer": "Anna kommt aus Österreich."
+      },
+      {
+       "id": "w01d5-13",
+       "kind": "fill_blank",
+       "topic": "Großschreibung",
+       "prompt": "Deutsch ist eine ___. (language)",
+       "answers": [
+        [
+         "Sprache"
+        ]
+       ],
+       "strictCase": true,
+       "explanation": "Nouns are capitalized.",
+       "words": [
+        "die Sprache"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "writing",
+     "prompt": "Write 4 sentences: where you're from, where you live, which languages you speak, and one sentence about a friend (er/sie spricht …).",
+     "modelAnswer": "Ich komme aus Mexiko. Ich wohne in den USA. Ich spreche Spanisch, Englisch und ein bisschen Japanisch. Paul spricht Deutsch und Englisch."
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "title": "Das Alphabet: buchstabieren",
+   "goals": [
+    "Spell your name in German",
+    "Give your name, studies and address (Sie)"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "Letter names",
+     "explanation": "When Germans spell, they say letter names, and several are traps for a Spanish or English ear. **E** is [eː] and **I** is [iː], the reverse of the English names. **J** [jɔt], **V** [faʊ̯], **W** [veː] and **Z** [tsɛt] are the other common traps. Umlauts are named by their sound, and ß is [ɛsˈtsɛt]. To ask for spelling: *Wie schreibt man das?*\n\n| Letter | Name | Letter | Name |\n|---|---|---|---|\n| A | [aː] | R | [ɛʁ] |\n| E | [eː] | V | [faʊ̯] |\n| I | [iː] | W | [veː] |\n| J | [jɔt] | Y | [ˈʏpsilɔn] |\n| Q | [kuː] | Z | [tsɛt] |\n| Ä | [ɛː] | ß | [ɛsˈtsɛt] |",
+     "examples": [
+      "J-O-S-E: [jɔt] [oː] [ɛs] [eː]",
+      "Wie schreibt man das? – W-E-B-E-R.",
+      "Wie ist Ihr Nachname?"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Neue Wörter (10)",
+     "words": [
+      {
+       "de": "buchstabieren",
+       "en": "to spell",
+       "example": "Ich buchstabiere: J-O-S-E."
+      },
+      {
+       "de": "Wie schreibt man das?",
+       "en": "How do you spell that?",
+       "example": "Wie schreibt man das? – W-E-B-E-R."
+      },
+      {
+       "de": "der Vorname",
+       "en": "the first name",
+       "example": "Mein Vorname ist Jose.",
+       "plural": "die Vornamen",
+       "gender": "der"
+      },
+      {
+       "de": "der Nachname",
+       "en": "the last name",
+       "example": "Wie ist Ihr Nachname?",
+       "plural": "die Nachnamen",
+       "gender": "der"
+      },
+      {
+       "de": "die Adresse",
+       "en": "the address",
+       "example": "Wie ist die Adresse?",
+       "plural": "die Adressen",
+       "gender": "die"
+      },
+      {
+       "de": "die Universität",
+       "en": "the university",
+       "example": "Die Universität ist groß.",
+       "plural": "die Universitäten",
+       "gender": "die"
+      },
+      {
+       "de": "der Maschinenbau",
+       "en": "mechanical engineering",
+       "example": "Ich studiere Maschinenbau.",
+       "gender": "der"
+      },
+      {
+       "de": "das Land",
+       "en": "the country",
+       "example": "Deutschland ist ein Land in Europa.",
+       "plural": "die Länder",
+       "gender": "das"
+      },
+      {
+       "de": "Woher kommen Sie?",
+       "en": "Where are you from? (Sie)",
+       "example": "Woher kommen Sie? – Aus Mexiko."
+      },
+      {
+       "de": "der Buchstabe",
+       "en": "the letter (of the alphabet)",
+       "example": "Der Name hat vier Buchstaben.",
+       "plural": "die Buchstaben",
+       "gender": "der"
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "An der Uni",
+     "text": "– Guten Tag! Wie ist Ihr Vorname, bitte?\n– Lucía.\n– Und Ihr Nachname?\n– Ortega.\n– Wie schreibt man das?\n– O-R-T-E-G-A.\n– Danke. Woher kommen Sie, Frau Ortega?\n– Aus Mexiko. Ich studiere hier an der Universität. Ich studiere Maschinenbau.\n– Und wie ist die Adresse?\n– Goethestraße zwölf.",
+     "translation": "– Hello! What's your first name, please?\n– Lucía.\n– And your last name?\n– Ortega.\n– How do you spell that?\n– O-R-T-E-G-A.\n– Thank you. Where are you from, Ms. Ortega?\n– From Mexico. I study here at the university. I study mechanical engineering.\n– And what's the address?\n– Goethestraße twelve."
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w01d6-1",
+       "kind": "multiple_choice",
+       "topic": "Alphabet",
+       "prompt": "German name of the letter **E**?",
+       "options": [
+        "[iː]",
+        "[eː]",
+        "[ɛʁ]"
+       ],
+       "answer": 1,
+       "explanation": "E = [eː], like Spanish e but long."
+      },
+      {
+       "id": "w01d6-2",
+       "kind": "multiple_choice",
+       "topic": "Alphabet",
+       "prompt": "German name of the letter **I**?",
+       "options": [
+        "[aɪ̯]",
+        "[iː]",
+        "[eː]"
+       ],
+       "answer": 1
+      },
+      {
+       "id": "w01d6-3",
+       "kind": "multiple_choice",
+       "topic": "Alphabet",
+       "prompt": "German name of the letter **W**?",
+       "options": [
+        "[veː]",
+        "[faʊ̯]",
+        "[ˈdɔbl̩juː]"
+       ],
+       "answer": 0
+      },
+      {
+       "id": "w01d6-4",
+       "kind": "multiple_choice",
+       "topic": "Alphabet",
+       "prompt": "German name of the letter **V**?",
+       "options": [
+        "[veː]",
+        "[faʊ̯]",
+        "[uːve]"
+       ],
+       "answer": 1,
+       "explanation": "V = [faʊ̯]; in words it's usually [f]: vier, Vater."
+      },
+      {
+       "id": "w01d6-5",
+       "kind": "multiple_choice",
+       "topic": "Alphabet",
+       "prompt": "German name of the letter **Z**?",
+       "options": [
+        "[tsɛt]",
+        "[zeːta]",
+        "[θeta]"
+       ],
+       "answer": 0,
+       "explanation": "Z is always [ts]."
+      },
+      {
+       "id": "w01d6-6",
+       "kind": "match",
+       "topic": "Vokabeln",
+       "prompt": "Match the German to the English.",
+       "pairs": [
+        [
+         "der Vorname",
+         "first name"
+        ],
+        [
+         "der Nachname",
+         "last name"
+        ],
+        [
+         "die Adresse",
+         "address"
+        ],
+        [
+         "das Land",
+         "country"
+        ],
+        [
+         "der Buchstabe",
+         "letter"
+        ]
+       ]
+      },
+      {
+       "id": "w01d6-7",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Wie ___ man das? (schreiben)",
+       "answers": [
+        [
+         "schreibt"
+        ]
+       ],
+       "explanation": "man takes the er/sie/es form: -t."
+      },
+      {
+       "id": "w01d6-8",
+       "kind": "fill_blank",
+       "topic": "Großschreibung",
+       "prompt": "Ich studiere ___. (mechanical engineering)",
+       "answers": [
+        [
+         "Maschinenbau"
+        ]
+       ],
+       "strictCase": true,
+       "explanation": "Noun → capital M; no article after studieren."
+      },
+      {
+       "id": "w01d6-9",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Woher ___ Sie? (kommen)",
+       "answers": [
+        [
+         "kommen"
+        ]
+       ],
+       "explanation": "Sie → -en."
+      },
+      {
+       "id": "w01d6-10",
+       "kind": "translate",
+       "topic": "Alphabet",
+       "direction": "en-de",
+       "prompt": "How do you spell that?",
+       "acceptable": [
+        "wie schreibt man das",
+        "wie buchstabiert man das"
+       ],
+       "modelAnswer": "Wie schreibt man das?"
+      },
+      {
+       "id": "w01d6-11",
+       "kind": "translate",
+       "topic": "Vorstellung",
+       "direction": "en-de",
+       "prompt": "I study mechanical engineering.",
+       "acceptable": [
+        "ich studiere maschinenbau"
+       ],
+       "modelAnswer": "Ich studiere Maschinenbau."
+      },
+      {
+       "id": "w01d6-12",
+       "kind": "multiple_choice",
+       "topic": "Plural",
+       "prompt": "Plural of **das Land**?",
+       "options": [
+        "die Lands",
+        "die Länder",
+        "die Lande"
+       ],
+       "answer": 1,
+       "explanation": "-er plural with umlaut: Land → Länder."
+      },
+      {
+       "id": "w01d6-13",
+       "kind": "translate",
+       "topic": "Höflichkeit",
+       "direction": "en-de",
+       "prompt": "Again, please.",
+       "acceptable": [
+        "noch einmal bitte",
+        "noch einmal, bitte",
+        "nochmal bitte",
+        "nochmal, bitte",
+        "noch mal, bitte",
+        "noch mal bitte",
+        "bitte noch einmal"
+       ],
+       "modelAnswer": "Noch einmal, bitte.",
+       "words": [
+        "Noch einmal, bitte."
+       ]
+      }
+     ]
+    },
+    {
+     "type": "speaking",
+     "prompt": "Spell your first name, last name and city aloud, letter by letter. Ask your partner to write them down from your spelling only.",
+     "modelAnswer": "J-O-S-E: [jɔt] [oː] [ɛs] [eː]. Check every E, I, J, V, W and Z."
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "title": "Wiederholung: sich vorstellen (du & Sie)",
+   "goals": [
+    "Introduce yourself with du and with Sie",
+    "Keep a conversation going"
+   ],
+   "sections": [
+    {
+     "type": "grammar",
+     "title": "du or Sie?",
+     "explanation": "Today you put the week together: one introduction with **du**, one with **Sie**. Only the pronoun, the verb ending and the greeting change (*Hallo / Guten Tag*). Use **Sie** with adults you don't know, staff and professors; use **du** with people your age, friends, and anyone who offers it. **leider, vielleicht, natürlich** at the start of a sentence take position 1, so the verb comes right after them.\n\n| | du | Sie |\n|---|---|---|\n| name | Wie heißt du? | Wie heißen Sie? |\n| from | Woher kommst du? | Woher kommen Sie? |\n| live | Wo wohnst du? | Wo wohnen Sie? |\n| job | Was machst du? | Was machen Sie? |\n| back | Und du? | Und Sie? |",
+     "examples": [
+      "Leider spreche ich nur ein bisschen Deutsch.",
+      "Vielleicht wohnt Anna hier.",
+      "Natürlich lerne ich Deutsch!"
+     ]
+    },
+    {
+     "type": "vocab",
+     "title": "Neue Wörter (10)",
+     "words": [
+      {
+       "de": "Und du? / Und Sie?",
+       "en": "And you? (du / Sie)",
+       "example": "Ich komme aus Mexiko. Und Sie?"
+      },
+      {
+       "de": "Es geht.",
+       "en": "so-so / it's okay",
+       "example": "Wie geht's? – Es geht."
+      },
+      {
+       "de": "Ich weiß nicht.",
+       "en": "I don't know.",
+       "example": "Wo ist Paul? – Ich weiß nicht."
+      },
+      {
+       "de": "Was bedeutet …?",
+       "en": "What does … mean?",
+       "example": "Was bedeutet Lied?"
+      },
+      {
+       "de": "Wie sagt man … auf Deutsch?",
+       "en": "How do you say … in German?",
+       "example": "Wie sagt man gracias auf Deutsch?"
+      },
+      {
+       "de": "natürlich",
+       "en": "of course",
+       "example": "Natürlich spreche ich Spanisch!"
+      },
+      {
+       "de": "vielleicht",
+       "en": "maybe",
+       "example": "Vielleicht ist Anna hier."
+      },
+      {
+       "de": "leider",
+       "en": "unfortunately",
+       "example": "Leider verstehe ich das nicht."
+      },
+      {
+       "de": "nur",
+       "en": "only",
+       "example": "Ich spreche nur ein bisschen Deutsch."
+      },
+      {
+       "de": "morgen",
+       "en": "tomorrow",
+       "example": "Morgen arbeite ich."
+      }
+     ]
+    },
+    {
+     "type": "reading",
+     "title": "Zwei Gespräche",
+     "text": "– Hallo! Ich bin Lena. Wie heißt du?\n– Ich heiße Jose. Freut mich!\n– Woher kommst du, Jose?\n– Aus Mexiko. Und du?\n– Ich komme aus Deutschland, aus Hamburg. Was machst du hier?\n– Ich studiere Maschinenbau. Und natürlich lerne ich Deutsch!\n\n– Guten Tag! Mein Name ist Weber. Wie heißen Sie?\n– Guten Tag, Frau Weber. Ich heiße Jose.\n– Woher kommen Sie?\n– Aus Mexiko. Leider spreche ich nur ein bisschen Deutsch.\n– Kein Problem. Sprechen Sie Englisch?\n– Ja, natürlich.\n– Gut! Bis morgen!",
+     "translation": "– Hi! I'm Lena. What's your name?\n– My name is Jose. Nice to meet you!\n– Where are you from, Jose?\n– From Mexico. And you?\n– I'm from Germany, from Hamburg. What are you doing here?\n– I study mechanical engineering. And of course I'm learning German!\n\n– Hello! My name is Weber. What's your name?\n– Hello, Ms. Weber. My name is Jose.\n– Where are you from?\n– From Mexico. Unfortunately I only speak a little German.\n– No problem. Do you speak English?\n– Yes, of course.\n– Good! See you tomorrow!"
+    },
+    {
+     "type": "exercises",
+     "items": [
+      {
+       "id": "w01d7-1",
+       "kind": "multiple_choice",
+       "topic": "Register",
+       "prompt": "A friend's friend your age at a party. Ask her name.",
+       "options": [
+        "Wie heißen Sie?",
+        "Wie heißt du?"
+       ],
+       "answer": 1,
+       "explanation": "Same age, casual setting → du."
+      },
+      {
+       "id": "w01d7-2",
+       "kind": "multiple_choice",
+       "topic": "Register",
+       "prompt": "At the university office. Ask where the clerk is from.",
+       "options": [
+        "Woher kommst du?",
+        "Woher kommen Sie?"
+       ],
+       "answer": 1,
+       "explanation": "Staff you don't know → Sie."
+      },
+      {
+       "id": "w01d7-3",
+       "kind": "fill_blank",
+       "topic": "Verbendungen",
+       "prompt": "Was ___ Sie? (machen)",
+       "answers": [
+        [
+         "machen"
+        ]
+       ],
+       "explanation": "Sie → -en."
+      },
+      {
+       "id": "w01d7-4",
+       "kind": "fill_blank",
+       "topic": "Vokabeln",
+       "prompt": "Ich ___ nicht. (I don't know.)",
+       "answers": [
+        [
+         "weiß"
+        ]
+       ],
+       "explanation": "wissen is irregular: ich weiß."
+      },
+      {
+       "id": "w01d7-5",
+       "kind": "order",
+       "topic": "Wortstellung (V2)",
+       "prompt": "Build: Unfortunately I only speak a little German.",
+       "answer": "Leider spreche ich nur ein bisschen Deutsch.",
+       "explanation": "leider = position 1 → verb next."
+      },
+      {
+       "id": "w01d7-6",
+       "kind": "order",
+       "topic": "Wortstellung (V2)",
+       "prompt": "Build: Tomorrow I'm working.",
+       "answer": "Morgen arbeite ich."
+      },
+      {
+       "id": "w01d7-7",
+       "kind": "translate",
+       "topic": "Höflichkeit",
+       "direction": "en-de",
+       "prompt": "How do you say gracias in German?",
+       "acceptable": [
+        "wie sagt man gracias auf deutsch",
+        "wie sagt man \"gracias\" auf deutsch",
+        "wie sagt man 'gracias' auf deutsch"
+       ],
+       "modelAnswer": "Wie sagt man gracias auf Deutsch?",
+       "explanation": "auf Deutsch = in German."
+      },
+      {
+       "id": "w01d7-8",
+       "kind": "translate",
+       "topic": "Höflichkeit",
+       "direction": "en-de",
+       "prompt": "What does Lied mean?",
+       "acceptable": [
+        "was bedeutet lied",
+        "was bedeutet \"lied\"",
+        "was bedeutet 'lied'",
+        "was heißt lied"
+       ],
+       "modelAnswer": "Was bedeutet Lied?",
+       "words": [
+        "das Lied"
+       ]
+      },
+      {
+       "id": "w01d7-9",
+       "kind": "translate",
+       "topic": "Höflichkeit",
+       "direction": "en-de",
+       "prompt": "Pardon? (you didn't catch it)",
+       "acceptable": [
+        "wie bitte"
+       ],
+       "modelAnswer": "Wie bitte?",
+       "words": [
+        "Wie bitte?"
+       ],
+       "explanation": "Polite with du and Sie; Was? is blunt."
+      },
+      {
+       "id": "w01d7-10",
+       "kind": "translate",
+       "topic": "Register",
+       "direction": "en-de",
+       "prompt": "How are you? (formal)",
+       "acceptable": [
+        "wie geht es ihnen"
+       ],
+       "modelAnswer": "Wie geht es Ihnen?",
+       "words": [
+        "Wie geht es Ihnen?"
+       ]
+      },
+      {
+       "id": "w01d7-11",
+       "kind": "match",
+       "topic": "Vokabeln",
+       "prompt": "Match the German to the English.",
+       "pairs": [
+        [
+         "natürlich",
+         "of course"
+        ],
+        [
+         "vielleicht",
+         "maybe"
+        ],
+        [
+         "leider",
+         "unfortunately"
+        ],
+        [
+         "nur",
+         "only"
+        ],
+        [
+         "morgen",
+         "tomorrow"
+        ]
+       ]
+      },
+      {
+       "id": "w01d7-12",
+       "kind": "fill_blank",
+       "topic": "Großschreibung",
+       "prompt": "Der ___ heißt Paul. (friend)",
+       "answers": [
+        [
+         "Freund"
+        ]
+       ],
+       "strictCase": true,
+       "explanation": "Nouns are capitalized.",
+       "words": [
+        "der Freund"
+       ]
+      },
+      {
+       "id": "w01d7-13",
+       "kind": "fill_blank",
+       "topic": "Zahlen",
+       "prompt": "Ich bin ___ Jahre alt. (17)",
+       "answers": [
+        [
+         "siebzehn"
+        ]
+       ],
+       "explanation": "sieben + zehn, but the -en drops: siebzehn.",
+       "words": [
+        "siebzehn"
+       ]
+      },
+      {
+       "id": "w01d7-14",
+       "kind": "fill_blank",
+       "topic": "Großschreibung",
+       "prompt": "___ ist Geld. (Time)",
+       "answers": [
+        [
+         "Zeit"
+        ]
+       ],
+       "strictCase": true,
+       "explanation": "die Zeit: ei = [aɪ̯], z = [ts].",
+       "words": [
+        "die Zeit"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "writing",
+     "prompt": "Write 6–8 lines introducing yourself with Sie to a professor: greeting, name, where you're from, where you live, what you study, languages. End with a question back (Und Sie?).",
+     "modelAnswer": "Guten Tag! Ich heiße Jose. Ich komme aus Mexiko. Jetzt wohne ich in Indiana, in den USA. Ich studiere Maschinenbau. Ich spreche Spanisch, Englisch und ein bisschen Japanisch. Leider spreche ich nur ein bisschen Deutsch. Und Sie? Woher kommen Sie?"
+    },
+    {
+     "type": "speaking",
+     "prompt": "**Partner topic:** introduce yourself to your speaking partner twice, once with du and once with Sie. Then ask them three W-questions and answer theirs. Ask them to correct verb endings.",
+     "modelAnswer": "du: Hallo! Ich bin Jose. Wie heißt du? Woher kommst du? … Sie: Guten Tag! Ich heiße Jose. Wie heißen Sie? Woher kommen Sie? …"
+    }
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "id": "w01-01",
+   "day": 1,
+   "en": "to be",
+   "de": "sein",
+   "example": "Ich bin Jose.",
+   "exampleEn": "I'm Jose.",
+   "notes": "Irregular: bin, bist, ist, sind, seid, sind. Like Spanish ser."
+  },
+  {
+   "id": "w01-02",
+   "day": 1,
+   "en": "you are (du)",
+   "de": "du bist",
+   "example": "Du bist Student.",
+   "exampleEn": "You're a student.",
+   "notes": "du: friends, family, kids, people your age."
+  },
+  {
+   "id": "w01-03",
+   "day": 1,
+   "en": "he is / she is",
+   "de": "er ist / sie ist",
+   "example": "Sie ist Studentin.",
+   "exampleEn": "She's a student.",
+   "notes": "Same verb for er, sie, es."
+  },
+  {
+   "id": "w01-04",
+   "day": 1,
+   "en": "we are",
+   "de": "wir sind",
+   "example": "Wir sind Freunde.",
+   "exampleEn": "We're friends.",
+   "notes": "Same form as Sie sind / sie sind."
+  },
+  {
+   "id": "w01-05",
+   "day": 1,
+   "en": "you are (ihr = you all, informal)",
+   "de": "ihr seid",
+   "example": "Ihr seid Studenten.",
+   "exampleEn": "You (all) are students.",
+   "notes": "ihr = plural of du, like Spanish vosotros sois."
+  },
+  {
+   "id": "w01-06",
+   "day": 1,
+   "en": "you are (Sie, formal) / they are",
+   "de": "Sie sind / sie sind",
+   "example": "Sind Sie Herr Müller?",
+   "exampleEn": "Are you Mr. Müller?",
+   "notes": "Same verb; only the capital S marks formal 'you'."
+  },
+  {
+   "id": "w01-07",
+   "day": 1,
+   "en": "the student (male)",
+   "de": "der Student",
+   "gender": "der",
+   "plural": "die Studenten",
+   "example": "Ich bin Student.",
+   "exampleEn": "I'm a student.",
+   "notes": "No article for jobs and roles: Ich bin Student, not ein Student.",
+   "img": "university student man"
+  },
+  {
+   "id": "w01-08",
+   "day": 1,
+   "en": "the student (female)",
+   "de": "die Studentin",
+   "gender": "die",
+   "plural": "die Studentinnen",
+   "example": "Anna ist Studentin.",
+   "exampleEn": "Anna is a student.",
+   "notes": "-in makes the female form; plural -innen.",
+   "img": "university student woman"
+  },
+  {
+   "id": "w01-09",
+   "day": 1,
+   "en": "the engineer (male)",
+   "de": "der Ingenieur",
+   "gender": "der",
+   "plural": "die Ingenieure",
+   "example": "Ich bin Ingenieur.",
+   "exampleEn": "I'm an engineer.",
+   "notes": "French loanword, stress at the end: [ɪnʒeˈni̯øːɐ̯]. Female: die Ingenieurin.",
+   "img": "engineer at work"
+  },
+  {
+   "id": "w01-10",
+   "day": 1,
+   "en": "What do you do for a living? (Sie)",
+   "de": "Was sind Sie von Beruf?",
+   "example": "Was sind Sie von Beruf? – Ich bin Ingenieur.",
+   "exampleEn": "What do you do for a living? – I'm an engineer.",
+   "notes": "du: Was bist du von Beruf? der Beruf = profession."
+  },
+  {
+   "id": "w01-11",
+   "day": 2,
+   "en": "to come",
+   "de": "kommen",
+   "example": "Wir kommen aus Mexiko.",
+   "exampleEn": "We're from Mexico.",
+   "notes": "kommen aus = to be from (venir de)."
+  },
+  {
+   "id": "w01-12",
+   "day": 2,
+   "en": "to live (reside somewhere)",
+   "de": "wohnen",
+   "example": "Wir wohnen in Indiana.",
+   "exampleEn": "We live in Indiana.",
+   "notes": "Where you live = wohnen, not leben. Silent h → long o: [ˈvoːnən]."
+  },
+  {
+   "id": "w01-13",
+   "day": 2,
+   "en": "to learn",
+   "de": "lernen",
+   "example": "Ich lerne Deutsch.",
+   "exampleEn": "I'm learning German.",
+   "notes": "lernen = learn, study for a class; studieren = study at university."
+  },
+  {
+   "id": "w01-14",
+   "day": 2,
+   "en": "to do / to make",
+   "de": "machen",
+   "example": "Was machst du?",
+   "exampleEn": "What are you doing?",
+   "notes": "a + ch = [x]: [ˈmaxən]."
+  },
+  {
+   "id": "w01-15",
+   "day": 2,
+   "en": "to hear / to listen to",
+   "de": "hören",
+   "example": "Wir hören Musik.",
+   "exampleEn": "We're listening to music.",
+   "notes": "No 'to': Ich höre Musik. ö = [øː]."
+  },
+  {
+   "id": "w01-16",
+   "day": 2,
+   "en": "to drink",
+   "de": "trinken",
+   "example": "Er trinkt Kaffee.",
+   "exampleEn": "He drinks coffee.",
+   "notes": "Regular: ich trinke, du trinkst, er trinkt."
+  },
+  {
+   "id": "w01-17",
+   "day": 2,
+   "en": "to study (at university)",
+   "de": "studieren",
+   "example": "Anna studiert Musik.",
+   "exampleEn": "Anna studies music.",
+   "notes": "Stress on -ie-: [ʃtuˈdiːʁən]. Spanish estudiar, but only for university."
+  },
+  {
+   "id": "w01-18",
+   "day": 2,
+   "en": "to work",
+   "de": "arbeiten",
+   "example": "Er arbeitet in Berlin.",
+   "exampleEn": "He works in Berlin.",
+   "notes": "Stem ends in -t → extra e: du arbeitest, er arbeitet."
+  },
+  {
+   "id": "w01-19",
+   "day": 2,
+   "en": "to be called (name)",
+   "de": "heißen",
+   "example": "Er heißt Paul.",
+   "exampleEn": "His name is Paul.",
+   "notes": "ich heiße, du heißt, Sie heißen. ß + st → ßt."
+  },
+  {
+   "id": "w01-20",
+   "day": 2,
+   "en": "to play",
+   "de": "spielen",
+   "example": "Das Kind spielt.",
+   "exampleEn": "The child is playing.",
+   "notes": "sp at the start = [ʃp]: [ˈʃpiːlən]."
+  },
+  {
+   "id": "w01-21",
+   "day": 3,
+   "en": "today",
+   "de": "heute",
+   "example": "Heute lerne ich Deutsch.",
+   "exampleEn": "Today I'm learning German.",
+   "notes": "eu = [ɔʏ̯]: [ˈhɔʏ̯tə]. First word → verb second."
+  },
+  {
+   "id": "w01-22",
+   "day": 3,
+   "en": "now",
+   "de": "jetzt",
+   "example": "Jetzt wohne ich in Indiana.",
+   "exampleEn": "Now I live in Indiana.",
+   "notes": "j = [j], tz = [ts]: [jɛtst]."
+  },
+  {
+   "id": "w01-23",
+   "day": 3,
+   "en": "here",
+   "de": "hier",
+   "example": "Ich wohne hier.",
+   "exampleEn": "I live here.",
+   "notes": "ie = [iː], final r → [ɐ̯]: [hiːɐ̯]."
+  },
+  {
+   "id": "w01-24",
+   "day": 3,
+   "en": "also / too",
+   "de": "auch",
+   "example": "Ich bin auch Student.",
+   "exampleEn": "I'm a student too.",
+   "notes": "ch after au = [x]: [aʊ̯x]."
+  },
+  {
+   "id": "w01-25",
+   "day": 3,
+   "en": "very",
+   "de": "sehr",
+   "example": "Das Brot ist sehr gut.",
+   "exampleEn": "The bread is very good.",
+   "notes": "Silent h → long e: [zeːɐ̯]. Like Spanish muy."
+  },
+  {
+   "id": "w01-26",
+   "day": 3,
+   "en": "gladly; verb + gern = to like doing",
+   "de": "gern",
+   "example": "Ich höre gern Musik.",
+   "exampleEn": "I like listening to music.",
+   "notes": "Ich trinke gern Kaffee = I like (drinking) coffee. 'Gern!' = Sure! / You're welcome."
+  },
+  {
+   "id": "w01-27",
+   "day": 3,
+   "en": "and",
+   "de": "und",
+   "example": "Paul und Anna sind Freunde.",
+   "exampleEn": "Paul and Anna are friends.",
+   "notes": "Final d → [t]: [ʊnt]. Doesn't count as a position for V2."
+  },
+  {
+   "id": "w01-28",
+   "day": 3,
+   "en": "but",
+   "de": "aber",
+   "example": "Ich spreche Englisch, aber nicht gut.",
+   "exampleEn": "I speak English, but not well.",
+   "notes": "Doesn't count as a position for V2."
+  },
+  {
+   "id": "w01-29",
+   "day": 3,
+   "en": "or",
+   "de": "oder",
+   "example": "Kaffee oder Wasser?",
+   "exampleEn": "Coffee or water?",
+   "notes": "Doesn't count as a position for V2."
+  },
+  {
+   "id": "w01-30",
+   "day": 3,
+   "en": "not",
+   "de": "nicht",
+   "example": "Ich verstehe das nicht.",
+   "exampleEn": "I don't understand that.",
+   "notes": "Goes late in the sentence, not before the verb like Spanish no."
+  },
+  {
+   "id": "w01-31",
+   "day": 4,
+   "en": "who",
+   "de": "wer",
+   "example": "Wer ist das?",
+   "exampleEn": "Who is that?",
+   "notes": "False friend: wer = who, wo = where."
+  },
+  {
+   "id": "w01-32",
+   "day": 4,
+   "en": "what",
+   "de": "was",
+   "example": "Was trinkst du?",
+   "exampleEn": "What are you drinking?",
+   "notes": "Short a: [vas]."
+  },
+  {
+   "id": "w01-33",
+   "day": 4,
+   "en": "where",
+   "de": "wo",
+   "example": "Wo ist das Buch?",
+   "exampleEn": "Where is the book?",
+   "notes": "Not 'who' (that's wer)."
+  },
+  {
+   "id": "w01-34",
+   "day": 4,
+   "en": "where from",
+   "de": "woher",
+   "example": "Woher kommt Anna?",
+   "exampleEn": "Where is Anna from?",
+   "notes": "Pairs with kommen aus: Woher kommst du? – Aus Mexiko."
+  },
+  {
+   "id": "w01-35",
+   "day": 4,
+   "en": "how",
+   "de": "wie",
+   "example": "Wie heißt das Lied?",
+   "exampleEn": "What's the song called?",
+   "notes": "Also 'what' with names: Wie heißt du? (¿Cómo te llamas?)"
+  },
+  {
+   "id": "w01-36",
+   "day": 4,
+   "en": "How old are you? (du)",
+   "de": "Wie alt bist du?",
+   "example": "Wie alt bist du? – Ich bin zwanzig.",
+   "exampleEn": "How old are you? – I'm twenty.",
+   "notes": "Sie: Wie alt sind Sie?"
+  },
+  {
+   "id": "w01-37",
+   "day": 4,
+   "en": "I'm … years old.",
+   "de": "Ich bin … Jahre alt.",
+   "example": "Das Mädchen ist elf Jahre alt.",
+   "exampleEn": "The girl is eleven years old.",
+   "notes": "Often just: Ich bin zwanzig."
+  },
+  {
+   "id": "w01-38",
+   "day": 4,
+   "en": "the year",
+   "de": "das Jahr",
+   "gender": "das",
+   "plural": "die Jahre",
+   "example": "Das Kind ist ein Jahr alt.",
+   "exampleEn": "The child is one year old.",
+   "notes": "j = [j], silent h → long a: [jaːɐ̯]."
+  },
+  {
+   "id": "w01-39",
+   "day": 4,
+   "en": "Where do you live? (du)",
+   "de": "Wo wohnst du?",
+   "example": "Wo wohnst du? – Ich wohne in Indiana.",
+   "exampleEn": "Where do you live? – I live in Indiana.",
+   "notes": "Sie: Wo wohnen Sie?"
+  },
+  {
+   "id": "w01-40",
+   "day": 4,
+   "en": "What do you do? (job or right now; du)",
+   "de": "Was machst du?",
+   "example": "Was machst du? – Ich lerne Deutsch.",
+   "exampleEn": "What are you doing? – I'm learning German.",
+   "notes": "Sie: Was machen Sie?"
+  },
+  {
+   "id": "w01-41",
+   "day": 5,
+   "en": "to speak",
+   "de": "sprechen",
+   "example": "Wir sprechen Deutsch.",
+   "exampleEn": "We speak German.",
+   "notes": "Vowel change: du sprichst, er spricht. The rest is regular."
+  },
+  {
+   "id": "w01-42",
+   "day": 5,
+   "en": "Germany",
+   "de": "Deutschland",
+   "example": "Paul kommt aus Deutschland.",
+   "exampleEn": "Paul is from Germany.",
+   "notes": "No article: aus Deutschland. eu = [ɔʏ̯].",
+   "img": "Germany flag"
+  },
+  {
+   "id": "w01-43",
+   "day": 5,
+   "en": "Austria",
+   "de": "Österreich",
+   "example": "Anna kommt aus Österreich.",
+   "exampleEn": "Anna is from Austria.",
+   "notes": "No article. [ˈøːstəʁaɪ̯ç]; -reich ends in [ç].",
+   "img": "Austria flag"
+  },
+  {
+   "id": "w01-44",
+   "day": 5,
+   "en": "Switzerland",
+   "de": "die Schweiz",
+   "gender": "die",
+   "example": "Lea kommt aus der Schweiz.",
+   "exampleEn": "Lea is from Switzerland.",
+   "notes": "Always with the article: aus der Schweiz, in der Schweiz. z = [ts].",
+   "img": "Switzerland flag"
+  },
+  {
+   "id": "w01-45",
+   "day": 5,
+   "en": "the USA",
+   "de": "die USA",
+   "example": "Wir wohnen in den USA.",
+   "exampleEn": "We live in the USA.",
+   "notes": "Plural: aus den USA, in den USA. [uːʔɛsˈʔaː].",
+   "img": "United States flag"
+  },
+  {
+   "id": "w01-46",
+   "day": 5,
+   "en": "Japan",
+   "de": "Japan",
+   "example": "Tokio ist in Japan.",
+   "exampleEn": "Tokyo is in Japan.",
+   "notes": "j = [j]: [ˈjaːpan].",
+   "img": "Japan flag"
+  },
+  {
+   "id": "w01-47",
+   "day": 5,
+   "en": "Spanish (language)",
+   "de": "Spanisch",
+   "example": "Ich spreche Spanisch.",
+   "exampleEn": "I speak Spanish.",
+   "notes": "Languages are capitalized. sp = [ʃp]: [ˈʃpaːnɪʃ]."
+  },
+  {
+   "id": "w01-48",
+   "day": 5,
+   "en": "English (language)",
+   "de": "Englisch",
+   "example": "Paul spricht gut Englisch.",
+   "exampleEn": "Paul speaks English well.",
+   "notes": "[ˈɛŋlɪʃ]. Capital E."
+  },
+  {
+   "id": "w01-49",
+   "day": 5,
+   "en": "Japanese (language)",
+   "de": "Japanisch",
+   "example": "Sprichst du Japanisch?",
+   "exampleEn": "Do you speak Japanese?",
+   "notes": "Language names end in -isch and are capitalized."
+  },
+  {
+   "id": "w01-50",
+   "day": 5,
+   "en": "German (language)",
+   "de": "Deutsch",
+   "example": "Wir lernen Deutsch.",
+   "exampleEn": "We're learning German.",
+   "notes": "Always capital D. Spelled -tsch: [dɔʏ̯tʃ]."
+  },
+  {
+   "id": "w01-51",
+   "day": 6,
+   "en": "to spell",
+   "de": "buchstabieren",
+   "example": "Ich buchstabiere: J-O-S-E.",
+   "exampleEn": "I'll spell it: J-O-S-E.",
+   "notes": "Stress on -bie-: [buːxʃtaˈbiːʁən]."
+  },
+  {
+   "id": "w01-52",
+   "day": 6,
+   "en": "How do you spell that?",
+   "de": "Wie schreibt man das?",
+   "example": "Wie schreibt man das? – W-E-B-E-R.",
+   "exampleEn": "How do you spell that? – W-E-B-E-R.",
+   "notes": "man = one/you, like Spanish se: ¿Cómo se escribe?"
+  },
+  {
+   "id": "w01-53",
+   "day": 6,
+   "en": "the first name",
+   "de": "der Vorname",
+   "gender": "der",
+   "plural": "die Vornamen",
+   "example": "Mein Vorname ist Jose.",
+   "exampleEn": "My first name is Jose.",
+   "notes": "vor = before. Formal: Wie ist Ihr Vorname?"
+  },
+  {
+   "id": "w01-54",
+   "day": 6,
+   "en": "the last name",
+   "de": "der Nachname",
+   "gender": "der",
+   "plural": "die Nachnamen",
+   "example": "Wie ist Ihr Nachname?",
+   "exampleEn": "What's your last name? (Sie)",
+   "notes": "nach = after. Also der Familienname."
+  },
+  {
+   "id": "w01-55",
+   "day": 6,
+   "en": "the address",
+   "de": "die Adresse",
+   "gender": "die",
+   "plural": "die Adressen",
+   "example": "Wie ist die Adresse?",
+   "exampleEn": "What's the address?",
+   "notes": "One d, double s (unlike English): [aˈdʁɛsə]."
+  },
+  {
+   "id": "w01-56",
+   "day": 6,
+   "en": "the university",
+   "de": "die Universität",
+   "gender": "die",
+   "plural": "die Universitäten",
+   "example": "Die Universität ist groß.",
+   "exampleEn": "The university is big.",
+   "notes": "Everyday: die Uni. Stress at the end: [univɛʁziˈtɛːt].",
+   "img": "university campus"
+  },
+  {
+   "id": "w01-57",
+   "day": 6,
+   "en": "mechanical engineering",
+   "de": "der Maschinenbau",
+   "gender": "der",
+   "example": "Ich studiere Maschinenbau.",
+   "exampleEn": "I study mechanical engineering.",
+   "notes": "No article after studieren. Maschine [maˈʃiːnə] + Bau."
+  },
+  {
+   "id": "w01-58",
+   "day": 6,
+   "en": "the country",
+   "de": "das Land",
+   "gender": "das",
+   "plural": "die Länder",
+   "example": "Deutschland ist ein Land in Europa.",
+   "exampleEn": "Germany is a country in Europe.",
+   "notes": "Plural with umlaut: die Länder [ˈlɛndɐ]."
+  },
+  {
+   "id": "w01-59",
+   "day": 6,
+   "en": "Where are you from? (Sie)",
+   "de": "Woher kommen Sie?",
+   "example": "Woher kommen Sie? – Aus Mexiko.",
+   "exampleEn": "Where are you from? – From Mexico.",
+   "notes": "du: Woher kommst du?"
+  },
+  {
+   "id": "w01-60",
+   "day": 6,
+   "en": "the letter (of the alphabet)",
+   "de": "der Buchstabe",
+   "gender": "der",
+   "plural": "die Buchstaben",
+   "example": "Der Name hat vier Buchstaben.",
+   "exampleEn": "The name has four letters.",
+   "notes": "Not a letter you mail (that's der Brief)."
+  },
+  {
+   "id": "w01-61",
+   "day": 7,
+   "en": "And you? (du / Sie)",
+   "de": "Und du? / Und Sie?",
+   "example": "Ich komme aus Mexiko. Und Sie?",
+   "exampleEn": "I'm from Mexico. And you?",
+   "notes": "Throws the question back; match the register."
+  },
+  {
+   "id": "w01-62",
+   "day": 7,
+   "en": "so-so / it's okay",
+   "de": "Es geht.",
+   "example": "Wie geht's? – Es geht.",
+   "exampleEn": "How are you? – So-so.",
+   "notes": "Neutral to slightly negative. Works with du and Sie."
+  },
+  {
+   "id": "w01-63",
+   "day": 7,
+   "en": "I don't know.",
+   "de": "Ich weiß nicht.",
+   "example": "Wo ist Paul? – Ich weiß nicht.",
+   "exampleEn": "Where's Paul? – I don't know.",
+   "notes": "wissen is irregular: ich weiß [vaɪ̯s]."
+  },
+  {
+   "id": "w01-64",
+   "day": 7,
+   "en": "What does … mean?",
+   "de": "Was bedeutet …?",
+   "example": "Was bedeutet Lied?",
+   "exampleEn": "What does Lied mean?",
+   "notes": "be- is unstressed: [bəˈdɔʏ̯tət]."
+  },
+  {
+   "id": "w01-65",
+   "day": 7,
+   "en": "How do you say … in German?",
+   "de": "Wie sagt man … auf Deutsch?",
+   "example": "Wie sagt man gracias auf Deutsch?",
+   "exampleEn": "How do you say gracias in German?",
+   "notes": "auf Deutsch = in German (not in Deutsch)."
+  },
+  {
+   "id": "w01-66",
+   "day": 7,
+   "en": "of course",
+   "de": "natürlich",
+   "example": "Natürlich spreche ich Spanisch!",
+   "exampleEn": "Of course I speak Spanish!",
+   "notes": "[naˈtyːɐ̯lɪç]. First word → verb second."
+  },
+  {
+   "id": "w01-67",
+   "day": 7,
+   "en": "maybe",
+   "de": "vielleicht",
+   "example": "Vielleicht ist Anna hier.",
+   "exampleEn": "Maybe Anna is here.",
+   "notes": "Stress on -leicht: [fiˈlaɪ̯çt]."
+  },
+  {
+   "id": "w01-68",
+   "day": 7,
+   "en": "unfortunately",
+   "de": "leider",
+   "example": "Leider verstehe ich das nicht.",
+   "exampleEn": "Unfortunately I don't understand that.",
+   "notes": "First word → verb second: Leider verstehe ich …"
+  },
+  {
+   "id": "w01-69",
+   "day": 7,
+   "en": "only",
+   "de": "nur",
+   "example": "Ich spreche nur ein bisschen Deutsch.",
+   "exampleEn": "I only speak a little German.",
+   "notes": "Long u: [nuːɐ̯]."
+  },
+  {
+   "id": "w01-70",
+   "day": 7,
+   "en": "tomorrow",
+   "de": "morgen",
+   "example": "Morgen arbeite ich.",
+   "exampleEn": "Tomorrow I'm working.",
+   "notes": "Lowercase = tomorrow; der Morgen = morning (Guten Morgen)."
+  }
+ ]
+}
